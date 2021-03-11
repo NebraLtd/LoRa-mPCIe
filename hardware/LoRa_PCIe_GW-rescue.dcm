@@ -1,0 +1,60 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP GND
+D Power symbol creates a global label with name "GND" , ground
+K power-flag
+$ENDCMP
+#
+$CMP RF_Shield_Two_Pieces
+D Two-piece EMI RF shielding Frame
+$ENDCMP
+#
+$CMP Rf_Shield_Cover
+D Cover for two pieces Rf Shield
+$ENDCMP
+#
+$CMP SX1303
+F https://semtech.my.salesforce.com/sfc/p/#E0000000JelG/a/2R000000Hlli/Te0cB6.fNWAPfxRfoFz38R6LOTf3sLAJhD4CpS2RwFc
+$ENDCMP
+#
+$CMP VCC3V3_IN
+D Power symbol creates a global label with name "VCC3V3_IN"
+K power-flag
+$ENDCMP
+#
+$CMP VCCCORE12
+D Power symbol creates a global label with name "VCCCORE12"
+K power-flag
+$ENDCMP
+#
+$CMP VCCGNSS
+D Power symbol creates a global label with name "VCCGNSS"
+K power-flag
+$ENDCMP
+#
+$CMP VCCIO33
+D Power symbol creates a global label with name "VCCIO33"
+K power-flag
+$ENDCMP
+#
+$CMP VCC_FEM
+D Power symbol creates a global label with name "VCC_FEM"
+K power-flag
+$ENDCMP
+#
+$CMP VCC_FEM1
+D Power symbol creates a global label with name "VCC_FEM1"
+K power-flag
+$ENDCMP
+#
+$CMP VCC_MAIN
+D Power symbol creates a global label with name "VCC_MAIN"
+K power-flag
+$ENDCMP
+#
+$CMP VDD_RADIO
+D Power symbol creates a global label with name "VDD_RADIO"
+K power-flag
+$ENDCMP
+#
+#End Doc Library
