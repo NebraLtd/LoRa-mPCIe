@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name LoRa_PCIe_GW)(type KiCad)(uri ${KIPRJMOD}/LoRa_PCIe_GW.pretty)(options "")(descr ""))
+)

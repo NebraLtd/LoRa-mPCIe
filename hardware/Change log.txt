@@ -1,0 +1,7 @@
+V1.0_2021_03_11
+	- New KiCad project, layout preserved.
+	- Added GNSS EVA-M8M.
+	- Added 10uF on pin 41 PCIe pin
+	- Removed UART signals from PCIe conn to SX1302/3
+	- Removed R811 saw filter jumper, not necessary.
+	- Replaced Rf Shield with SMS-458.
