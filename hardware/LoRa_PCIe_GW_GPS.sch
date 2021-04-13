@@ -5,8 +5,8 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 2 5
 Title "LoRa PCIe Gateway - GNSS"
-Date "26 02 2021"
-Rev "1.0"
+Date "2021-04-13"
+Rev "1.1"
 Comp "Nebra Ltd"
 Comment1 "GNSS Schematic part with EVA-M8M SIP"
 Comment2 ""

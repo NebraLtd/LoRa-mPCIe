@@ -1,7 +1,17 @@
-V1.0_2021_03_11
+Rev 1.0_2021_03_11
 	- New KiCad project, layout preserved.
 	- Added GNSS EVA-M8M.
 	- Added 10uF on pin 41 PCIe pin
 	- Removed UART signals from PCIe conn to SX1302/3
 	- Removed R811 saw filter jumper, not necessary.
 	- Replaced Rf Shield with SMS-458.
+
+Rev 1.1_2021_04_13
+	- Changed control SX1302 GPIO signals for LEDs according to Corecell_V3
+	- Added  Common Mode Choke to USB lines
+	- Updated mcu control signals according to Corecell_V3
+	- Interface part updated with 5V input power option from PCIe pin2.
+	- Update power supply schematic according to Corecell_V3
+	- Removed Rf part R802, R803, R804 according to Corecell_V3
+	- Changed resitor values R805, R807, R809 to 1k according to Corecell_V3
+	- Silkscreen updated.

@@ -5,144 +5,90 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 4 5
 Title "LoRa PCIe Gateway Power"
-Date "26 02 2021"
-Rev "1.0"
+Date "2021-04-13"
+Rev "1.1"
 Comp "Nebra Ltd"
 Comment1 "Power Management Schematic Part"
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 1245 1290 0    108  ~ 22
+Text Notes 800  800  0    108  ~ 22
 LoRa PCIe Gateway - Power Management
-Text Notes 10155 1460 0    96   ~ 19
+Text Notes 4300 2800 0    96   ~ 19
 VCCIO33 : 3.3V
-Text Notes 10475 2970 0    96   ~ 19
+Text Notes 5350 4620 0    96   ~ 19
 VCCCORE: 1.2V
-Text Notes 10650 7175 0    96   ~ 19
-VCC_FEM : 3.3V
-Text Label 7550 5825 0    60   ~ 0
-POWER_EN
-Text Notes 10150 5370 0    96   ~ 19
-VDD_RF SX1250 & SX1261 : 3.3V
 Text Notes 550  9175 0    72   ~ 14
 Nebra logos + Fiducial_Marks:
-Text Label 2550 6400 0    60   ~ 0
+Text Label 2875 7575 0    60   ~ 0
 I2C_SDA
-Text Label 2550 6600 0    60   ~ 0
+Text Label 2875 7775 0    60   ~ 0
 I2C_SCL
-Text Notes 3010 5710 0    72   ~ 14
+Text Notes 3335 6885 0    72   ~ 14
 Temperature sensor
-$Comp
-L LoRa_PCIe_GW-rescue:Cap- C207
-U 1 1 6039202A
-P 7175 7450
-F 0 "C207" V 7365 7540 60  0000 L BNN
-F 1 "10uF" V 7465 7540 60  0000 L BNN
-F 2 "LoRa_PCIe_GW:ccer_603_smd_small" H 7465 7540 60  0001 C CNN
-F 3 "" H 7465 7540 60  0000 C CNN
-F 4 "10µF ±10% 16V Ceramic Capacitor X5R 0603 (1608 Metric)" H 7175 7450 50  0001 C CNN "Description"
-F 5 "Murata" H 7175 7450 50  0001 C CNN "Manufacturer"
-F 6 "GRM188R61C106KAAL" H 7175 7450 50  0001 C CNN "Part Number"
-F 7 "0.1" H 7175 7450 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GRM188R61C106KAALJ/4905339" H 7175 7450 50  0001 C CNN "Supplier Link"
-	1    7175 7450
-	0    1    1    0   
-$EndComp
-$Comp
-L LoRa_PCIe_GW-rescue:Ferrite_beads- FB205
-U 1 1 60392029
-P 10375 5625
-F 0 "FB205" H 10555 5705 60  0000 L BNN
-F 1 "Ferrite beads" H 10445 5515 60  0000 L BNN
-F 2 "LoRa_PCIe_GW:rlc_402_smd_small" H 10445 5515 60  0001 C CNN
-F 3 "" H 10445 5515 60  0000 C CNN
-F 4 "10 Ohms @ 100MHz 1 Power Line Ferrite Bead 0402 (1005 Metric) 1A 25mOhm" H 10375 5625 50  0001 C CNN "Description"
-F 5 "Murata" H 10375 5625 50  0001 C CNN "Manufacturer"
-F 6 "BLM15PG100SN1D" H 10375 5625 50  0001 C CNN "Part Number"
-F 7 "0.027" H 10375 5625 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/murata-electronics/BLM15PG100SN1D/2587980" H 10375 5625 50  0001 C CNN "Supplier Link"
-	1    10375 5625
-	1    0    0    -1  
-$EndComp
-$Comp
-L LoRa_PCIe_GW-rescue:Cap- C208
-U 1 1 60392028
-P 11225 5925
-F 0 "C208" V 11365 5825 60  0000 R TNN
-F 1 "100nF" V 11285 5835 60  0000 R TNN
-F 2 "LoRa_PCIe_GW:ccer_201_smd_small" H 11285 5835 60  0001 C CNN
-F 3 "" H 11285 5835 60  0000 C CNN
-F 4 "0.1µF ±10% 16V Ceramic Capacitor X7S 0201 (0603 Metric)" H 11225 5925 50  0001 C CNN "Description"
-F 5 "Murata" H 11225 5925 50  0001 C CNN "Manufacturer"
-F 6 "GRM033C71C104KE14D" H 11225 5925 50  0001 C CNN "Part Number"
-F 7 "0.01" H 11225 5925 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GRM033C71C104KE14D/5027472" H 11225 5925 50  0001 C CNN "Supplier Link"
-	1    11225 5925
-	0    -1   -1   0   
-$EndComp
 $Comp
 L LoRa_PCIe_GW-rescue:Cap- C221
 U 1 1 60392027
-P 11050 3550
-F 0 "C221" V 11190 3440 60  0000 R TNN
-F 1 "100nF" V 11100 3450 60  0000 R TNN
-F 2 "LoRa_PCIe_GW:ccer_201_smd_small" H 11100 3450 60  0001 C CNN
-F 3 "" H 11100 3450 60  0000 C CNN
-F 4 "0.1µF ±10% 16V Ceramic Capacitor X7S 0201 (0603 Metric)" H 11050 3550 50  0001 C CNN "Description"
-F 5 "Murata" H 11050 3550 50  0001 C CNN "Manufacturer"
-F 6 "GRM033C71C104KE14D" H 11050 3550 50  0001 C CNN "Part Number"
-F 7 "0.01" H 11050 3550 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GRM033C71C104KE14D/5027472" H 11050 3550 50  0001 C CNN "Supplier Link"
-	1    11050 3550
+P 5925 5200
+F 0 "C221" V 6065 5090 60  0000 R TNN
+F 1 "100nF" V 5975 5100 60  0000 R TNN
+F 2 "LoRa_PCIe_GW:ccer_402_smd_small" H 5975 5100 60  0001 C CNN
+F 3 "" H 5975 5100 60  0000 C CNN
+F 4 "Multilayer ceramic capacitors X7R ±10%, 16V" H 5925 5200 50  0001 C CNN "Description"
+F 5 "Murata" H 5925 5200 50  0001 C CNN "Manufacturer"
+F 6 "GMD155R71C104KA11" H 5925 5200 50  0001 C CNN "Part Number"
+F 7 "0.01" H 5925 5200 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GMD155R71C104KA11D/10696609" H 5925 5200 50  0001 C CNN "Supplier Link"
+	1    5925 5200
 	0    -1   -1   0   
 $EndComp
 $Comp
 L LoRa_PCIe_GW-rescue:Cap- C220
 U 1 1 60392026
-P 11050 2000
-F 0 "C220" V 11180 1900 60  0000 R TNN
-F 1 "100nF" V 11090 1910 60  0000 R TNN
-F 2 "LoRa_PCIe_GW:ccer_201_smd_small" H 11090 1910 60  0001 C CNN
-F 3 "" H 11090 1910 60  0000 C CNN
-F 4 "0.1µF ±10% 16V Ceramic Capacitor X7S 0201 (0603 Metric)" H 11050 2000 50  0001 C CNN "Description"
-F 5 "Murata" H 11050 2000 50  0001 C CNN "Manufacturer"
-F 6 "GRM033C71C104KE14D" H 11050 2000 50  0001 C CNN "Part Number"
-F 7 "0.01" H 11050 2000 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GRM033C71C104KE14D/5027472" H 11050 2000 50  0001 C CNN "Supplier Link"
-	1    11050 2000
+P 4550 3350
+F 0 "C220" V 4680 3250 60  0000 R TNN
+F 1 "100nF" V 4590 3260 60  0000 R TNN
+F 2 "LoRa_PCIe_GW:ccer_402_smd_small" H 4590 3260 60  0001 C CNN
+F 3 "" H 4590 3260 60  0000 C CNN
+F 4 "Multilayer ceramic capacitors X7R ±10%, 16V" H 4550 3350 50  0001 C CNN "Description"
+F 5 "Murata" H 4550 3350 50  0001 C CNN "Manufacturer"
+F 6 "GMD155R71C104KA11" H 4550 3350 50  0001 C CNN "Part Number"
+F 7 "0.01" H 4550 3350 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GMD155R71C104KA11D/10696609" H 4550 3350 50  0001 C CNN "Supplier Link"
+	1    4550 3350
 	0    -1   -1   0   
 $EndComp
 $Comp
 L LoRa_PCIe_GW-rescue:Ferrite_beads- FB208
 U 1 1 60392025
-P 10250 3250
-F 0 "FB208" H 10420 3330 60  0000 L BNN
-F 1 "Ferrite beads" H 10350 3130 60  0000 L BNN
-F 2 "LoRa_PCIe_GW:rlc_402_smd_small" H 10350 3130 60  0001 C CNN
-F 3 "" H 10350 3130 60  0000 C CNN
-F 4 "10 Ohms @ 100MHz 1 Power Line Ferrite Bead 0402 (1005 Metric) 1A 25mOhm" H 10250 3250 50  0001 C CNN "Description"
-F 5 "Murata" H 10250 3250 50  0001 C CNN "Manufacturer"
-F 6 "BLM15PG100SN1D" H 10250 3250 50  0001 C CNN "Part Number"
-F 7 "0.027" H 10250 3250 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/murata-electronics/BLM15PG100SN1D/2587980" H 10250 3250 50  0001 C CNN "Supplier Link"
-	1    10250 3250
+P 5125 4900
+F 0 "FB208" H 5295 4980 60  0000 L BNN
+F 1 "Ferrite beads" H 5225 4780 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:rlc_402_smd_small" H 5225 4780 60  0001 C CNN
+F 3 "" H 5225 4780 60  0000 C CNN
+F 4 "10 Ohms @ 100MHz 1 Power Line Ferrite Bead 0402 (1005 Metric) 1A 25mOhm" H 5125 4900 50  0001 C CNN "Description"
+F 5 "Murata" H 5125 4900 50  0001 C CNN "Manufacturer"
+F 6 "BLM15PG100SN1D" H 5125 4900 50  0001 C CNN "Part Number"
+F 7 "0.027" H 5125 4900 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/murata-electronics/BLM15PG100SN1D/2587980" H 5125 4900 50  0001 C CNN "Supplier Link"
+	1    5125 4900
 	1    0    0    -1  
 $EndComp
 $Comp
 L LoRa_PCIe_GW-rescue:Ferrite_beads- FB207
 U 1 1 60392024
-P 10250 1700
-F 0 "FB207" H 10420 1780 60  0000 L BNN
-F 1 "Ferrite beads" H 10330 1590 60  0000 L BNN
-F 2 "LoRa_PCIe_GW:rlc_402_smd_small" H 10330 1590 60  0001 C CNN
-F 3 "" H 10330 1590 60  0000 C CNN
-F 4 "10 Ohms @ 100MHz 1 Power Line Ferrite Bead 0402 (1005 Metric) 1A 25mOhm" H 10250 1700 50  0001 C CNN "Description"
-F 5 "Murata" H 10250 1700 50  0001 C CNN "Manufacturer"
-F 6 "BLM15PG100SN1D" H 10250 1700 50  0001 C CNN "Part Number"
-F 7 "0.027" H 10250 1700 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/murata-electronics/BLM15PG100SN1D/2587980" H 10250 1700 50  0001 C CNN "Supplier Link"
-	1    10250 1700
+P 3600 3050
+F 0 "FB207" H 3770 3130 60  0000 L BNN
+F 1 "Ferrite beads" H 3680 2940 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:rlc_402_smd_small" H 3680 2940 60  0001 C CNN
+F 3 "" H 3680 2940 60  0000 C CNN
+F 4 "10 Ohms @ 100MHz 1 Power Line Ferrite Bead 0402 (1005 Metric) 1A 25mOhm" H 3600 3050 50  0001 C CNN "Description"
+F 5 "Murata" H 3600 3050 50  0001 C CNN "Manufacturer"
+F 6 "BLM15PG100SN1D" H 3600 3050 50  0001 C CNN "Part Number"
+F 7 "0.027" H 3600 3050 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/murata-electronics/BLM15PG100SN1D/2587980" H 3600 3050 50  0001 C CNN "Supplier Link"
+	1    3600 3050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -160,17 +106,17 @@ $EndComp
 $Comp
 L LoRa_PCIe_GW-rescue:Cap- C202
 U 1 1 6039201F
-P 9475 1700
-F 0 "C202" V 9645 1800 60  0000 L BNN
-F 1 "1uF" V 9735 1800 60  0000 L BNN
-F 2 "LoRa_PCIe_GW:ccer_402_smd_small" H 9735 1800 60  0001 C CNN
-F 3 "" H 9735 1800 60  0000 C CNN
-F 4 "1µF ±20% 10V Ceramic Capacitor X5R 0402 (1005 Metric)" H 9475 1700 50  0001 C CNN "Description"
-F 5 "Murata" H 9475 1700 50  0001 C CNN "Manufacturer"
-F 6 "GRM153R61A105ME95D" H 9475 1700 50  0001 C CNN "Part Number"
-F 7 "0.038" H 9475 1700 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GRM153R61A105ME95D/4904820" H 9475 1700 50  0001 C CNN "Supplier Link"
-	1    9475 1700
+P 3275 3050
+F 0 "C202" V 3445 3150 60  0000 L BNN
+F 1 "1uF" V 3535 3150 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:ccer_402_smd_small" H 3535 3150 60  0001 C CNN
+F 3 "" H 3535 3150 60  0000 C CNN
+F 4 "1µF ±20% 10V Ceramic Capacitor X5R 0402 (1005 Metric)" H 3275 3050 50  0001 C CNN "Description"
+F 5 "Murata" H 3275 3050 50  0001 C CNN "Manufacturer"
+F 6 "GRM153R61A105ME95D" H 3275 3050 50  0001 C CNN "Part Number"
+F 7 "0.038" H 3275 3050 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GRM153R61A105ME95D/4904820" H 3275 3050 50  0001 C CNN "Supplier Link"
+	1    3275 3050
 	0    1    1    0   
 $EndComp
 $Comp
@@ -210,905 +156,529 @@ F 4 "Logo ESD" H 1075 9500 50  0000 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L LoRa_PCIe_GW-rescue:Ferrite_beads- FB211
-U 1 1 6039201B
-P 10425 7450
-F 0 "FB211" H 10610 7534 60  0000 L BNN
-F 1 "Ferrite beads" H 10520 7334 60  0000 L BNN
-F 2 "LoRa_PCIe_GW:rlc_402_smd_small" H 10520 7334 60  0001 C CNN
-F 3 "" H 10520 7334 60  0000 C CNN
-F 4 "10 Ohms @ 100MHz 1 Power Line Ferrite Bead 0402 (1005 Metric) 1A 25mOhm" H 10425 7450 50  0001 C CNN "Description"
-F 5 "Murata" H 10425 7450 50  0001 C CNN "Manufacturer"
-F 6 "BLM15PG100SN1D" H 10425 7450 50  0001 C CNN "Part Number"
-F 7 "0.027" H 10425 7450 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/murata-electronics/BLM15PG100SN1D/2587980" H 10425 7450 50  0001 C CNN "Supplier Link"
-	1    10425 7450
-	1    0    0    -1  
-$EndComp
-$Comp
 L LoRa_PCIe_GW-rescue:Cap- C223
 U 1 1 60392019
-P 2550 5850
-F 0 "C223" V 2712 5961 60  0000 L BNN
-F 1 "100nF" V 2792 5951 60  0000 L BNN
-F 2 "LoRa_PCIe_GW:ccer_201_smd_small" H 2792 5951 60  0001 C CNN
-F 3 "" H 2792 5951 60  0000 C CNN
-F 4 "0.1µF ±10% 16V Ceramic Capacitor X7S 0201 (0603 Metric)" H 2550 5850 50  0001 C CNN "Description"
-F 5 "Murata" H 2550 5850 50  0001 C CNN "Manufacturer"
-F 6 "GRM033C71C104KE14D" H 2550 5850 50  0001 C CNN "Part Number"
-F 7 "0.01" H 2550 5850 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GRM033C71C104KE14D/5027472" H 2550 5850 50  0001 C CNN "Supplier Link"
-	1    2550 5850
+P 2875 7025
+F 0 "C223" V 3037 7136 60  0000 L BNN
+F 1 "100nF" V 3117 7126 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:ccer_201_smd_small" H 3117 7126 60  0001 C CNN
+F 3 "" H 3117 7126 60  0000 C CNN
+F 4 "0.1µF ±10% 16V Ceramic Capacitor X7S 0201 (0603 Metric)" H 2875 7025 50  0001 C CNN "Description"
+F 5 "Murata" H 2875 7025 50  0001 C CNN "Manufacturer"
+F 6 "GRM033C71C104KE14D" H 2875 7025 50  0001 C CNN "Part Number"
+F 7 "0.01" H 2875 7025 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GRM033C71C104KE14D/5027472" H 2875 7025 50  0001 C CNN "Supplier Link"
+	1    2875 7025
 	0    1    1    0   
 $EndComp
 $Comp
 L LoRa_PCIe_GW-rescue:STTS751- U204
 U 1 1 60392018
-P 3075 6900
-F 0 "U204" H 3675 7725 60  0000 L BNN
-F 1 "STTS751" H 3538 6799 60  0000 L BNN
-F 2 "LoRa_PCIe_GW:UDFN-6L_2X2mm" H 3538 6799 60  0001 C CNN
-F 3 "" H 3538 6799 60  0000 C CNN
-F 4 "Temperature Sensor Digital, Local -40°C ~ 125°C 11 b 6-UDFN (2x2)" H 3075 6900 50  0001 C CNN "Description"
-F 5 "STMicroelectronics" H 3075 6900 50  0001 C CNN "Manufacturer"
-F 6 "STTS751-0DP3F" H 3075 6900 50  0001 C CNN "Part Number"
-F 7 "0.55" H 3075 6900 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/filter/temperature-sensors-analog-and-digital-output/518" H 3075 6900 50  0001 C CNN "Supplier Link"
-	1    3075 6900
+P 3400 8075
+F 0 "U204" H 4000 8900 60  0000 L BNN
+F 1 "STTS751" H 3863 7974 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:UDFN-6L_2X2mm" H 3863 7974 60  0001 C CNN
+F 3 "" H 3863 7974 60  0000 C CNN
+F 4 "Temperature Sensor Digital, Local -40°C ~ 125°C 11 b 6-UDFN (2x2)" H 3400 8075 50  0001 C CNN "Description"
+F 5 "STMicroelectronics" H 3400 8075 50  0001 C CNN "Manufacturer"
+F 6 "STTS751-0DP3F" H 3400 8075 50  0001 C CNN "Part Number"
+F 7 "0.55" H 3400 8075 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/filter/temperature-sensors-analog-and-digital-output/518" H 3400 8075 50  0001 C CNN "Supplier Link"
+	1    3400 8075
 	1    0    0    -1  
 $EndComp
 $Comp
 L LoRa_PCIe_GW-rescue:NCP103- U201
 U 1 1 60392016
-P 8250 2100
-F 0 "U201" H 8225 2725 60  0000 L BNN
-F 1 "3V3" H 8740 2700 60  0000 L BNN
-F 2 "LoRa_PCIe_GW:UDFN4_1x1mm" H 8740 2700 60  0001 C CNN
-F 3 "" H 8740 2700 60  0000 C CNN
-F 4 "Linear Voltage Regulator IC Positive Fixed 1 Output  150mA 4-UDFN (1.0x1.0)" H 8250 2100 50  0001 C CNN "Description"
-F 5 "ON Semiconductor" H 8250 2100 50  0001 C CNN "Manufacturer"
-F 6 "NCP103AMX330TCG" H 8250 2100 50  0001 C CNN "Part Number"
-F 7 "0.097" H 8250 2100 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/on-semiconductor/NCP103AMX330TCG/5022526" H 8250 2100 50  0001 C CNN "Supplier Link"
-	1    8250 2100
+P 2050 3450
+F 0 "U201" H 2025 4075 60  0000 L BNN
+F 1 "3V3" H 2600 4075 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:UDFN4_1x1mm" H 2540 4050 60  0001 C CNN
+F 3 "" H 2540 4050 60  0000 C CNN
+F 4 "Linear Voltage Regulator IC Positive Fixed 1 Output  150mA 4-UDFN (1.0x1.0)" H 2050 3450 50  0001 C CNN "Description"
+F 5 "ON Semiconductor" H 2050 3450 50  0001 C CNN "Manufacturer"
+F 6 "NCP103AMX330TCG" H 2050 3450 50  0001 C CNN "Part Number"
+F 7 "0.097" H 2050 3450 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/on-semiconductor/NCP103AMX330TCG/5022526" H 2050 3450 50  0001 C CNN "Supplier Link"
+	1    2050 3450
 	1    0    0    -1  
 $EndComp
 $Comp
 L LoRa_PCIe_GW-rescue:Cap- C203
 U 1 1 60392014
-P 10000 3250
-F 0 "C203" V 10160 3350 60  0000 L BNN
-F 1 "10uF" V 10250 3350 60  0000 L BNN
-F 2 "LoRa_PCIe_GW:ccer_603_smd_small" H 10250 3350 60  0001 C CNN
-F 3 "" H 10250 3350 60  0000 C CNN
-F 4 "10µF ±10% 16V Ceramic Capacitor X5R 0603 (1608 Metric)" H 10000 3250 50  0001 C CNN "Description"
-F 5 "Murata" H 10000 3250 50  0001 C CNN "Manufacturer"
-F 6 "GRM188R61C106KAAL" H 10000 3250 50  0001 C CNN "Part Number"
-F 7 "0.1" H 10000 3250 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GRM188R61C106KAALJ/4905339" H 10000 3250 50  0001 C CNN "Supplier Link"
-	1    10000 3250
+P 4875 4900
+F 0 "C203" V 5035 5000 60  0000 L BNN
+F 1 "10uF" V 5125 5000 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:ccer_603_smd_small" H 5125 5000 60  0001 C CNN
+F 3 "" H 5125 5000 60  0000 C CNN
+F 4 "10µF ±10% 16V Ceramic Capacitor X5R 0603 (1608 Metric)" H 4875 4900 50  0001 C CNN "Description"
+F 5 "Murata" H 4875 4900 50  0001 C CNN "Manufacturer"
+F 6 "GRM188R61C106KAAL" H 4875 4900 50  0001 C CNN "Part Number"
+F 7 "0.1" H 4875 4900 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GRM188R61C106KAALJ/4905339" H 4875 4900 50  0001 C CNN "Supplier Link"
+	1    4875 4900
 	0    1    1    0   
 $EndComp
 $Comp
 L LoRa_PCIe_GW-rescue:Cap- C204
 U 1 1 60392012
-P 7450 3250
-F 0 "C204" V 7620 3350 60  0000 L BNN
-F 1 "4.7uF" V 7710 3350 60  0000 L BNN
-F 2 "LoRa_PCIe_GW:ccer_603_smd_small" H 7710 3350 60  0001 C CNN
-F 3 "" H 7710 3350 60  0000 C CNN
-F 4 "4.7µF ±10% 16V Ceramic Capacitor X5R 0603 (1608 Metric)" H 7450 3250 50  0001 C CNN "Description"
-F 5 "Murata" H 7450 3250 50  0001 C CNN "Manufacturer"
-F 6 "GRM188R61C475KAAJD" H 7450 3250 50  0001 C CNN "Part Number"
-F 7 "0.089" H 7450 3250 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GRM188R61C475KAAJD/5027566" H 7450 3250 50  0001 C CNN "Supplier Link"
-	1    7450 3250
+P 2025 4900
+F 0 "C204" V 2195 5000 60  0000 L BNN
+F 1 "4.7uF" V 2285 5000 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:ccer_603_smd_small" H 2285 5000 60  0001 C CNN
+F 3 "" H 2285 5000 60  0000 C CNN
+F 4 "4.7µF ±10% 16V Ceramic Capacitor X5R 0603 (1608 Metric)" H 2025 4900 50  0001 C CNN "Description"
+F 5 "Murata" H 2025 4900 50  0001 C CNN "Manufacturer"
+F 6 "GRM188R61C475KAAJD" H 2025 4900 50  0001 C CNN "Part Number"
+F 7 "0.089" H 2025 4900 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GRM188R61C475KAAJD/5027566" H 2025 4900 50  0001 C CNN "Supplier Link"
+	1    2025 4900
 	0    1    1    0   
 $EndComp
 $Comp
 L LoRa_PCIe_GW-rescue:Inductor- L200
 U 1 1 60392011
-P 9175 3250
-F 0 "L200" H 9375 3310 60  0000 L BNN
-F 1 "2.2uH" H 9365 3150 60  0000 L BNN
-F 2 "LoRa_PCIe_GW:LQM2HPN2R2MJ0L" H 9365 3150 60  0001 C CNN
-F 3 "" H 9365 3150 60  0000 C CNN
-F 4 "2.2µH Shielded Multilayer Inductor 1A 150mOhm Max 1008 (2520 Metric) " H 9175 3250 50  0001 C CNN "Description"
-F 5 "Murata" H 9175 3250 50  0001 C CNN "Manufacturer"
-F 6 "LQM2HPN2R2MJ0L" H 9175 3250 50  0001 C CNN "Part Number"
-F 7 "0.14" H 9175 3250 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/murata-electronics/LQM2HPN2R2MJ0L/2594611" H 9175 3250 50  0001 C CNN "Supplier Link"
-	1    9175 3250
+P 4050 4900
+F 0 "L200" H 4250 4960 60  0000 L BNN
+F 1 "2.2uH" H 4240 4800 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:LQM2HPN2R2MJ0L" H 4240 4800 60  0001 C CNN
+F 3 "" H 4240 4800 60  0000 C CNN
+F 4 "2.2µH Shielded Multilayer Inductor 1A 150mOhm Max 1008 (2520 Metric) " H 4050 4900 50  0001 C CNN "Description"
+F 5 "Murata" H 4050 4900 50  0001 C CNN "Manufacturer"
+F 6 "LQM2HPN2R2MJ0L" H 4050 4900 50  0001 C CNN "Part Number"
+F 7 "0.14" H 4050 4900 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/murata-electronics/LQM2HPN2R2MJ0L/2594611" H 4050 4900 50  0001 C CNN "Supplier Link"
+	1    4050 4900
 	1    0    0    -1  
-$EndComp
-$Comp
-L LoRa_PCIe_GW-rescue:NCP114- U203
-U 1 1 60392010
-P 8300 6025
-F 0 "U203" H 8300 6650 60  0000 L BNN
-F 1 "3V3" H 8775 6650 60  0000 L BNN
-F 2 "LoRa_PCIe_GW:UDFN4_1x1mm" H 8780 6625 60  0001 C CNN
-F 3 "" H 8780 6625 60  0000 C CNN
-F 4 "Linear Voltage Regulator IC Positive Fixed 1 Output  300mA 4-UDFN (1.0x1.0)" H 8300 6025 50  0001 C CNN "Description"
-F 5 "ON Semiconductor" H 8300 6025 50  0001 C CNN "Manufacturer"
-F 6 "NCP114AMX330TBG" H 8300 6025 50  0001 C CNN "Part Number"
-F 7 "0.078" H 8300 6025 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/on-semiconductor/NCP114AMX330TBG/6166731" H 8300 6025 50  0001 C CNN "Supplier Link"
-	1    8300 6025
-	1    0    0    -1  
-$EndComp
-$Comp
-L LoRa_PCIe_GW-rescue:NCP176- U205
-U 1 1 6039200F
-P 8300 7850
-F 0 "U205" H 8300 8475 60  0000 L BNN
-F 1 "NCP176BMX330TCG" H 8600 8475 60  0000 L BNN
-F 2 "LoRa_PCIe_GW:XDFN6_1.2X1.2mm" H 8620 8440 60  0001 C CNN
-F 3 "" H 8620 8440 60  0000 C CNN
-F 4 "Linear Voltage Regulator IC Positive Fixed 1 Output  500mA 6-XDFN (1.2x1.2)" H 8300 7850 50  0001 C CNN "Description"
-F 5 "ON Semiconductor" H 8300 7850 50  0001 C CNN "Manufacturer"
-F 6 "NCP176AMX330TCG" H 8300 7850 50  0001 C CNN "Part Number"
-F 7 "0.135" H 8300 7850 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/on-semiconductor/NCP176AMX330TCG/5761739" H 8300 7850 50  0001 C CNN "Supplier Link"
-	1    8300 7850
-	1    0    0    -1  
-$EndComp
-$Comp
-L LoRa_PCIe_GW-rescue:Resistor- R204
-U 1 1 6039200D
-P 8875 5100
-F 0 "R204" H 9175 5060 60  0000 R TNN
-F 1 "NC" H 9175 5240 60  0000 R TNN
-F 2 "LoRa_PCIe_GW:rlc_402_smd_small" H 9175 5240 60  0001 C CNN
-F 3 "" H 9175 5240 60  0000 C CNN
-F 4 "CRCW04020000ZSTD" H 8875 5100 50  0001 C CNN "Description"
-F 5 "Vishay Dale" H 8875 5100 50  0001 C CNN "Manufacturer"
-F 6 "CRCW04020000ZSTD" H 8875 5100 50  0001 C CNN "Part Number"
-F 7 "0.014" H 8875 5100 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/vishay-dale/CRCW04020000ZSTD/1226552" H 8875 5100 50  0001 C CNN "Supplier Link"
-	1    8875 5100
-	-1   0    0    1   
 $EndComp
 $Comp
 L LoRa_PCIe_GW-rescue:Resistor- R206
 U 1 1 6039200C
-P 1475 6350
-F 0 "R206" V 1675 6300 60  0000 R TNN
-F 1 "4.7k" V 1575 6300 60  0000 R TNN
-F 2 "LoRa_PCIe_GW:rlc_201_smd_small" H 1575 6300 60  0001 C CNN
-F 3 "" H 1575 6300 60  0000 C CNN
-F 4 "4.7 kOhms ±1% 0.05W, 1/20W Chip Resistor 0201 (0603 Metric)  Thick Film" H 1475 6350 50  0001 C CNN "Description"
-F 5 "Vishay Dale" H 1475 6350 50  0001 C CNN "Manufacturer"
-F 6 "CRCW02014K70FNED" H 1475 6350 50  0001 C CNN "Part Number"
-F 7 "0.011" H 1475 6350 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/vishay-dale/CRCW02014K70FNED/1199881?s=N4IgTCBcDaIMICU4HUAMZUEYAsBpA7KgGIByAogCIgC6AvkA" H 1475 6350 50  0001 C CNN "Supplier Link"
-	1    1475 6350
+P 1800 7525
+F 0 "R206" V 2000 7475 60  0000 R TNN
+F 1 "4.7k" V 1900 7475 60  0000 R TNN
+F 2 "LoRa_PCIe_GW:rlc_201_smd_small" H 1900 7475 60  0001 C CNN
+F 3 "" H 1900 7475 60  0000 C CNN
+F 4 "4.7 kOhms ±1% 0.05W, 1/20W Chip Resistor 0201 (0603 Metric)  Thick Film" H 1800 7525 50  0001 C CNN "Description"
+F 5 "Vishay Dale" H 1800 7525 50  0001 C CNN "Manufacturer"
+F 6 "CRCW02014K70FNED" H 1800 7525 50  0001 C CNN "Part Number"
+F 7 "0.011" H 1800 7525 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/vishay-dale/CRCW02014K70FNED/1199881?s=N4IgTCBcDaIMICU4HUAMZUEYAsBpA7KgGIByAogCIgC6AvkA" H 1800 7525 50  0001 C CNN "Supplier Link"
+	1    1800 7525
 	0    -1   -1   0   
 $EndComp
 $Comp
 L LoRa_PCIe_GW-rescue:Resistor- R203
 U 1 1 6039200B
-P 1075 6350
-F 0 "R203" V 1275 6300 60  0000 R TNN
-F 1 "4.7k" V 1175 6300 60  0000 R TNN
-F 2 "LoRa_PCIe_GW:rlc_201_smd_small" H 1175 6300 60  0001 C CNN
-F 3 "" H 1175 6300 60  0000 C CNN
-F 4 "4.7 kOhms ±1% 0.05W, 1/20W Chip Resistor 0201 (0603 Metric)  Thick Film" H 1075 6350 50  0001 C CNN "Description"
-F 5 "Vishay Dale" H 1075 6350 50  0001 C CNN "Manufacturer"
-F 6 "CRCW02014K70FNED" H 1075 6350 50  0001 C CNN "Part Number"
-F 7 "0.011" H 1075 6350 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/vishay-dale/CRCW02014K70FNED/1199881?s=N4IgTCBcDaIMICU4HUAMZUEYAsBpA7KgGIByAogCIgC6AvkA" H 1075 6350 50  0001 C CNN "Supplier Link"
-	1    1075 6350
+P 1400 7525
+F 0 "R203" V 1600 7475 60  0000 R TNN
+F 1 "4.7k" V 1500 7475 60  0000 R TNN
+F 2 "LoRa_PCIe_GW:rlc_201_smd_small" H 1500 7475 60  0001 C CNN
+F 3 "" H 1500 7475 60  0000 C CNN
+F 4 "4.7 kOhms ±1% 0.05W, 1/20W Chip Resistor 0201 (0603 Metric)  Thick Film" H 1400 7525 50  0001 C CNN "Description"
+F 5 "Vishay Dale" H 1400 7525 50  0001 C CNN "Manufacturer"
+F 6 "CRCW02014K70FNED" H 1400 7525 50  0001 C CNN "Part Number"
+F 7 "0.011" H 1400 7525 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/vishay-dale/CRCW02014K70FNED/1199881?s=N4IgTCBcDaIMICU4HUAMZUEYAsBpA7KgGIByAogCIgC6AvkA" H 1400 7525 50  0001 C CNN "Supplier Link"
+	1    1400 7525
 	0    -1   -1   0   
-$EndComp
-$Comp
-L LoRa_PCIe_GW-rescue:Cap- C206
-U 1 1 60392009
-P 10125 7450
-F 0 "C206" V 10315 7540 60  0000 L BNN
-F 1 "4.7uF" V 10415 7540 60  0000 L BNN
-F 2 "LoRa_PCIe_GW:ccer_603_smd_small" H 10415 7540 60  0001 C CNN
-F 3 "" H 10415 7540 60  0000 C CNN
-F 4 "4.7µF ±10% 16V Ceramic Capacitor X5R 0603 (1608 Metric)" H 10125 7450 50  0001 C CNN "Description"
-F 5 "Murata" H 10125 7450 50  0001 C CNN "Manufacturer"
-F 6 "GRM188R61C475KAAJD" H 10125 7450 50  0001 C CNN "Part Number"
-F 7 "0.089" H 10125 7450 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GRM188R61C475KAAJD/5027566" H 10125 7450 50  0001 C CNN "Supplier Link"
-	1    10125 7450
-	0    1    1    0   
 $EndComp
 $Comp
 L LoRa_PCIe_GW-rescue:LED- LED4
 U 1 1 60392007
-P 6100 3800
-F 0 "LED4" V 6430 4010 60  0000 L BNN
-F 1 "GREEN" V 6625 4050 60  0000 L BNN
-F 2 "LoRa_PCIe_GW:CD1005-0402" H 6400 3470 60  0001 C CNN
-F 3 "" H 6400 3470 60  0000 C CNN
-F 4 "Green 570nm LED Indication - Discrete 1.9V 0402 (1005 Metric)" H 6100 3800 50  0001 C CNN "Description"
-F 5 "Kingbright" H 6100 3800 50  0001 C CNN "Manufacturer"
-F 6 "APHHS1005LCGCK" H 6100 3800 50  0001 C CNN "Part Number"
-F 7 "0.11" H 6100 3800 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/kingbright/APHHS1005LCGCK/7318974" H 6100 3800 50  0001 C CNN "Supplier Link"
-F 9 "VCCMAIN" V 6500 4200 50  0000 C CNN "Label"
-	1    6100 3800
+P 975 5450
+F 0 "LED4" V 1305 5660 60  0000 L BNN
+F 1 "GREEN" V 1500 5700 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:CD1005-0402" H 1275 5120 60  0001 C CNN
+F 3 "" H 1275 5120 60  0000 C CNN
+F 4 "Green 570nm LED Indication - Discrete 1.9V 0402 (1005 Metric)" H 975 5450 50  0001 C CNN "Description"
+F 5 "Kingbright" H 975 5450 50  0001 C CNN "Manufacturer"
+F 6 "APHHS1005LCGCK" H 975 5450 50  0001 C CNN "Part Number"
+F 7 "0.11" H 975 5450 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/kingbright/APHHS1005LCGCK/7318974" H 975 5450 50  0001 C CNN "Supplier Link"
+F 9 "VCCMAIN" V 1375 5850 50  0000 C CNN "Label"
+	1    975  5450
 	0    1    1    0   
 $EndComp
 $Comp
 L LoRa_PCIe_GW-rescue:Resistor- R208
 U 1 1 60392006
-P 6100 3400
-F 0 "R208" V 6300 3440 60  0000 L BNN
-F 1 "1k" V 6400 3440 60  0000 L BNN
-F 2 "LoRa_PCIe_GW:rlc_201_smd_small" H 6400 3440 60  0001 C CNN
-F 3 "" H 6400 3440 60  0000 C CNN
-F 4 "1 kOhms ±5% 0.05W, 1/20W Chip Resistor 0201 (0603 Metric)  Thick Film" H 6100 3400 50  0001 C CNN "Description"
-F 5 "Vishay Dale" H 6100 3400 50  0001 C CNN "Manufacturer"
-F 6 "CRCW02011K00JNED" H 6100 3400 50  0001 C CNN "Part Number"
-F 7 "0.007" H 6100 3400 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/vishay-dale/CRCW02011K00JNED/1178450?s=N4IgTCBcDaIMICU4HUAMZUEZMGlWoCkA5AUQBEQBdAXyA" H 6100 3400 50  0001 C CNN "Supplier Link"
-	1    6100 3400
+P 975 5050
+F 0 "R208" V 1175 5090 60  0000 L BNN
+F 1 "1k" V 1275 5090 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:rlc_201_smd_small" H 1275 5090 60  0001 C CNN
+F 3 "" H 1275 5090 60  0000 C CNN
+F 4 "1k Ohm ±5% 0.05W, 1/20W Chip Resistor 0201 (0603 Metric) - Thick Film" H 975 5050 50  0001 C CNN "Description"
+F 5 "Vishay Dale" H 975 5050 50  0001 C CNN "Manufacturer"
+F 6 "CRCW02011K00JNED" H 975 5050 50  0001 C CNN "Part Number"
+F 7 "0.073" H 975 5050 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/vishay-dale/CRCW02011K00JNED/1178450" H 975 5050 50  0001 C CNN "Supplier Link"
+	1    975  5050
 	0    1    1    0   
 $EndComp
-$Comp
-L LoRa_PCIe_GW-rescue:Cap- C212
-U 1 1 60392005
-P 6775 5625
-F 0 "C212" V 6935 5725 60  0000 L BNN
-F 1 "10uF" V 7025 5725 60  0000 L BNN
-F 2 "LoRa_PCIe_GW:ccer_603_smd_small" H 7025 5725 60  0001 C CNN
-F 3 "" H 7025 5725 60  0000 C CNN
-F 4 "10µF ±10% 16V Ceramic Capacitor X5R 0603 (1608 Metric)" H 6775 5625 50  0001 C CNN "Description"
-F 5 "Murata" H 6775 5625 50  0001 C CNN "Manufacturer"
-F 6 "GRM188R61C106KAAL" H 6775 5625 50  0001 C CNN "Part Number"
-F 7 "0.1" H 6775 5625 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GRM188R61C106KAALJ/4905339" H 6775 5625 50  0001 C CNN "Supplier Link"
-	1    6775 5625
-	0    1    1    0   
-$EndComp
-$Comp
-L LoRa_PCIe_GW-rescue:Cap- C213
-U 1 1 60392004
-P 10100 5625
-F 0 "C213" V 10270 5725 60  0000 L BNN
-F 1 "4.7uF" V 10350 5725 60  0000 L BNN
-F 2 "LoRa_PCIe_GW:ccer_402_smd_small" H 10350 5725 60  0001 C CNN
-F 3 "" H 10350 5725 60  0000 C CNN
-F 4 "4.7µF ±20% 6.3V Ceramic Capacitor X5R 0402 (1005 Metric)" H 10100 5625 50  0001 C CNN "Description"
-F 5 "Murata" H 10100 5625 50  0001 C CNN "Manufacturer"
-F 6 "GRM155R60J475ME47D" H 10100 5625 50  0001 C CNN "Part Number"
-F 7 "0.089" H 10100 5625 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R60J475ME47D/3694656" H 10100 5625 50  0001 C CNN "Supplier Link"
-	1    10100 5625
-	0    1    1    0   
-$EndComp
-$Comp
-L LoRa_PCIe_GW-rescue:Resistor- R201
-U 1 1 60392003
-P 7150 5825
-F 0 "R201" H 7250 5875 60  0000 L BNN
-F 1 "10k" H 7280 5685 60  0000 L BNN
-F 2 "LoRa_PCIe_GW:rlc_201_smd_small" H 7280 5685 60  0001 C CNN
-F 3 "" H 7280 5685 60  0000 C CNN
-F 4 "10 kOhms ±1% 0.05W, 1/20W Chip Resistor 0201  Thick Film" H 7150 5825 50  0001 C CNN "Description"
-F 5 "Vishay Dale" H 7150 5825 50  0001 C CNN "Manufacturer"
-F 6 "CRCW020110K0" H 7150 5825 50  0001 C CNN "Part Number"
-F 7 "0.037" H 7150 5825 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/vishay-dale/CRCW020110K0FKED/1967989" H 7150 5825 50  0001 C CNN "Supplier Link"
-	1    7150 5825
-	1    0    0    -1  
-$EndComp
-$Comp
-L LoRa_PCIe_GW-rescue:VCC_MAIN #PWR0164
-U 1 1 609EDAA4
-P 7925 1150
-F 0 "#PWR0164" H 7925 925 50  0001 C CNN
-F 1 "VCC_MAIN" H 7925 1300 50  0000 C CNN
-F 2 "" H 7675 1150 50  0001 C CNN
-F 3 "" H 7675 1150 50  0001 C CNN
-	1    7925 1150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8450 1275 7925 1275
-Wire Wire Line
-	7925 1275 7925 1150
 $Comp
 L LoRa_PCIe_GW-rescue:VCC_MAIN #PWR0165
 U 1 1 609FACFB
-P 7250 1700
-F 0 "#PWR0165" H 7250 1475 50  0001 C CNN
-F 1 "VCC_MAIN" H 7250 1850 50  0000 C CNN
-F 2 "" H 7000 1700 50  0001 C CNN
-F 3 "" H 7000 1700 50  0001 C CNN
-	1    7250 1700
+P 1050 3050
+F 0 "#PWR0165" H 1050 2825 50  0001 C CNN
+F 1 "VCC_MAIN" H 1050 3200 50  0000 C CNN
+F 2 "" H 800 3050 50  0001 C CNN
+F 3 "" H 800 3050 50  0001 C CNN
+	1    1050 3050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8050 1700 8000 1700
-Wire Wire Line
-	8050 1900 8000 1900
-Wire Wire Line
-	8000 1900 8000 1700
-Connection ~ 8000 1700
-Wire Wire Line
-	8000 1700 7475 1700
-Connection ~ 7475 1700
-Wire Wire Line
-	7475 1700 7250 1700
+	1850 3250 1800 3250
 $Comp
 L LoRa_PCIe_GW-rescue:GND #PWR0166
 U 1 1 60A0C1B1
-P 7475 2000
-F 0 "#PWR0166" H 7475 2125 50  0001 C CNN
-F 1 "GND" H 7475 1850 50  0000 C CNN
-F 2 "" H 7275 2000 50  0001 C CNN
-F 3 "" H 7275 2000 50  0001 C CNN
-	1    7475 2000
+P 1050 3350
+F 0 "#PWR0166" H 1050 3475 50  0001 C CNN
+F 1 "GND" H 1050 3200 50  0000 C CNN
+F 2 "" H 850 3350 50  0001 C CNN
+F 3 "" H 850 3350 50  0001 C CNN
+	1    1050 3350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8550 2300 8750 2300
+	2350 3650 2550 3650
 $Comp
 L LoRa_PCIe_GW-rescue:GND #PWR0167
 U 1 1 60A16DC5
-P 8550 2300
-F 0 "#PWR0167" H 8550 2425 50  0001 C CNN
-F 1 "GND" H 8550 2150 50  0000 C CNN
-F 2 "" H 8350 2300 50  0001 C CNN
-F 3 "" H 8350 2300 50  0001 C CNN
-	1    8550 2300
+P 2350 3650
+F 0 "#PWR0167" H 2350 3775 50  0001 C CNN
+F 1 "GND" H 2350 3500 50  0000 C CNN
+F 2 "" H 2150 3650 50  0001 C CNN
+F 3 "" H 2150 3650 50  0001 C CNN
+	1    2350 3650
 	1    0    0    -1  
 $EndComp
-Connection ~ 8550 2300
+Connection ~ 2350 3650
 $Comp
 L LoRa_PCIe_GW-rescue:GND #PWR0168
 U 1 1 60A1B8C3
-P 9475 2000
-F 0 "#PWR0168" H 9475 2125 50  0001 C CNN
-F 1 "GND" H 9475 1850 50  0000 C CNN
-F 2 "" H 9275 2000 50  0001 C CNN
-F 3 "" H 9275 2000 50  0001 C CNN
-	1    9475 2000
+P 3275 3350
+F 0 "#PWR0168" H 3275 3475 50  0001 C CNN
+F 1 "GND" H 3275 3200 50  0000 C CNN
+F 2 "" H 3075 3350 50  0001 C CNN
+F 3 "" H 3075 3350 50  0001 C CNN
+	1    3275 3350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9250 1700 9475 1700
-Wire Wire Line
-	9475 1700 9475 1275
-Connection ~ 9475 1700
-Wire Wire Line
-	9475 1700 10250 1700
-Wire Wire Line
-	9475 1275 8850 1275
+	3050 3050 3275 3050
+Connection ~ 3275 3050
 $Comp
 L LoRa_PCIe_GW-rescue:VCCIO33 #PWR0169
 U 1 1 60A2E4AC
-P 11050 1700
-F 0 "#PWR0169" H 11050 1500 50  0001 C CNN
-F 1 "VCCIO33" H 11060 1873 50  0000 C CNN
-F 2 "" H 10950 1800 50  0001 C CNN
-F 3 "" H 10950 1800 50  0001 C CNN
-	1    11050 1700
+P 4550 3050
+F 0 "#PWR0169" H 4550 2850 50  0001 C CNN
+F 1 "VCCIO33" H 4560 3223 50  0000 C CNN
+F 2 "" H 4450 3150 50  0001 C CNN
+F 3 "" H 4450 3150 50  0001 C CNN
+	1    4550 3050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10875 1700 11050 1700
-Connection ~ 11050 1700
+Connection ~ 4550 3050
 $Comp
 L LoRa_PCIe_GW-rescue:GND #PWR0170
 U 1 1 60A3E6B7
-P 11050 2000
-F 0 "#PWR0170" H 11050 2125 50  0001 C CNN
-F 1 "GND" H 11050 1850 50  0000 C CNN
-F 2 "" H 10850 2000 50  0001 C CNN
-F 3 "" H 10850 2000 50  0001 C CNN
-	1    11050 2000
+P 4550 3350
+F 0 "#PWR0170" H 4550 3475 50  0001 C CNN
+F 1 "GND" H 4550 3200 50  0000 C CNN
+F 2 "" H 4350 3350 50  0001 C CNN
+F 3 "" H 4350 3350 50  0001 C CNN
+	1    4550 3350
 	1    0    0    -1  
 $EndComp
 $Comp
 L LoRa_PCIe_GW-rescue:GND #PWR0173
 U 1 1 60A56E02
-P 6100 4300
-F 0 "#PWR0173" H 6100 4425 50  0001 C CNN
-F 1 "GND" H 6100 4150 50  0000 C CNN
-F 2 "" H 5900 4300 50  0001 C CNN
-F 3 "" H 5900 4300 50  0001 C CNN
-	1    6100 4300
+P 975 5950
+F 0 "#PWR0173" H 975 6075 50  0001 C CNN
+F 1 "GND" H 975 5800 50  0000 C CNN
+F 2 "" H 775 5950 50  0001 C CNN
+F 3 "" H 775 5950 50  0001 C CNN
+	1    975  5950
 	1    0    0    -1  
 $EndComp
 $Comp
 L LoRa_PCIe_GW-rescue:GND #PWR0174
 U 1 1 60A5B645
-P 7450 3550
-F 0 "#PWR0174" H 7450 3675 50  0001 C CNN
-F 1 "GND" H 7450 3400 50  0000 C CNN
-F 2 "" H 7250 3550 50  0001 C CNN
-F 3 "" H 7250 3550 50  0001 C CNN
-	1    7450 3550
+P 2025 5200
+F 0 "#PWR0174" H 2025 5325 50  0001 C CNN
+F 1 "GND" H 2025 5050 50  0000 C CNN
+F 2 "" H 1825 5200 50  0001 C CNN
+F 3 "" H 1825 5200 50  0001 C CNN
+	1    2025 5200
 	1    0    0    -1  
 $EndComp
 $Comp
 L LoRa_PCIe_GW-rescue:GND #PWR0175
 U 1 1 60A5F589
-P 7975 3575
-F 0 "#PWR0175" H 7975 3700 50  0001 C CNN
-F 1 "GND" H 7975 3425 50  0000 C CNN
-F 2 "" H 7775 3575 50  0001 C CNN
-F 3 "" H 7775 3575 50  0001 C CNN
-	1    7975 3575
+P 2850 5225
+F 0 "#PWR0175" H 2850 5350 50  0001 C CNN
+F 1 "GND" H 2850 5075 50  0000 C CNN
+F 2 "" H 2650 5225 50  0001 C CNN
+F 3 "" H 2650 5225 50  0001 C CNN
+	1    2850 5225
 	1    0    0    -1  
 $EndComp
 $Comp
 L LoRa_PCIe_GW-rescue:GND #PWR0176
 U 1 1 60A635AB
-P 8575 3950
-F 0 "#PWR0176" H 8575 4075 50  0001 C CNN
-F 1 "GND" H 8575 3800 50  0000 C CNN
-F 2 "" H 8375 3950 50  0001 C CNN
-F 3 "" H 8375 3950 50  0001 C CNN
-	1    8575 3950
+P 3450 5600
+F 0 "#PWR0176" H 3450 5725 50  0001 C CNN
+F 1 "GND" H 3450 5450 50  0000 C CNN
+F 2 "" H 3250 5600 50  0001 C CNN
+F 3 "" H 3250 5600 50  0001 C CNN
+	1    3450 5600
 	1    0    0    -1  
 $EndComp
 $Comp
 L LoRa_PCIe_GW-rescue:GND #PWR0177
 U 1 1 60A6745B
-P 10000 3550
-F 0 "#PWR0177" H 10000 3675 50  0001 C CNN
-F 1 "GND" H 10000 3400 50  0000 C CNN
-F 2 "" H 9800 3550 50  0001 C CNN
-F 3 "" H 9800 3550 50  0001 C CNN
-	1    10000 3550
+P 4875 5200
+F 0 "#PWR0177" H 4875 5325 50  0001 C CNN
+F 1 "GND" H 4875 5050 50  0000 C CNN
+F 2 "" H 4675 5200 50  0001 C CNN
+F 3 "" H 4675 5200 50  0001 C CNN
+	1    4875 5200
 	1    0    0    -1  
 $EndComp
 $Comp
 L LoRa_PCIe_GW-rescue:GND #PWR0178
 U 1 1 60A6B4BF
-P 11050 3550
-F 0 "#PWR0178" H 11050 3675 50  0001 C CNN
-F 1 "GND" H 11050 3400 50  0000 C CNN
-F 2 "" H 10850 3550 50  0001 C CNN
-F 3 "" H 10850 3550 50  0001 C CNN
-	1    11050 3550
+P 5925 5200
+F 0 "#PWR0178" H 5925 5325 50  0001 C CNN
+F 1 "GND" H 5925 5050 50  0000 C CNN
+F 2 "" H 5725 5200 50  0001 C CNN
+F 3 "" H 5725 5200 50  0001 C CNN
+	1    5925 5200
 	1    0    0    -1  
 $EndComp
 $Comp
 L LoRa_PCIe_GW-rescue:VCC_MAIN #PWR0179
 U 1 1 60A6F780
-P 7150 3250
-F 0 "#PWR0179" H 7150 3025 50  0001 C CNN
-F 1 "VCC_MAIN" H 7150 3400 50  0000 C CNN
-F 2 "" H 6900 3250 50  0001 C CNN
-F 3 "" H 6900 3250 50  0001 C CNN
-	1    7150 3250
+P 2025 4900
+F 0 "#PWR0179" H 2025 4675 50  0001 C CNN
+F 1 "VCC_MAIN" H 2025 5050 50  0000 C CNN
+F 2 "" H 1775 4900 50  0001 C CNN
+F 3 "" H 1775 4900 50  0001 C CNN
+	1    2025 4900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8175 3450 7975 3450
+	3050 5100 2850 5100
 Wire Wire Line
-	7975 3250 8175 3250
+	2850 4900 3050 4900
 Wire Wire Line
-	8175 3550 7975 3550
+	3050 5200 2850 5200
 Wire Wire Line
-	7975 3550 7975 3575
+	2850 5200 2850 5225
 Wire Wire Line
-	7975 3250 7450 3250
+	975  4900 975  5050
+Connection ~ 2850 4900
+Connection ~ 2025 4900
 Wire Wire Line
-	6100 3250 6100 3400
-Connection ~ 7975 3250
-Connection ~ 7450 3250
+	2025 4900 975  4900
 Wire Wire Line
-	7450 3250 7150 3250
-Connection ~ 7150 3250
+	3650 5600 3450 5600
+Connection ~ 3450 5600
 Wire Wire Line
-	7150 3250 6100 3250
+	2850 4900 2850 5100
 Wire Wire Line
-	8775 3950 8575 3950
-Connection ~ 8575 3950
+	4650 4900 4875 4900
+Connection ~ 4875 4900
 Wire Wire Line
-	7975 3250 7975 3450
+	4875 4900 5125 4900
 Wire Wire Line
-	9775 3250 10000 3250
-Connection ~ 10000 3250
+	4050 5100 4650 5100
 Wire Wire Line
-	10000 3250 10250 3250
-Wire Wire Line
-	9175 3450 9775 3450
-Wire Wire Line
-	9775 3450 9775 3250
-Connection ~ 9775 3250
+	4650 5100 4650 4900
+Connection ~ 4650 4900
 $Comp
 L LoRa_PCIe_GW-rescue:VCCCORE12 #PWR0180
 U 1 1 60A9DA74
-P 11050 3250
-F 0 "#PWR0180" H 11050 3050 50  0001 C CNN
-F 1 "VCCCORE12" H 11060 3423 50  0000 C CNN
-F 2 "" H 11050 3250 50  0001 C CNN
-F 3 "" H 11050 3250 50  0001 C CNN
-	1    11050 3250
+P 5925 4900
+F 0 "#PWR0180" H 5925 4700 50  0001 C CNN
+F 1 "VCCCORE12" H 5935 5073 50  0000 C CNN
+F 2 "" H 5925 4900 50  0001 C CNN
+F 3 "" H 5925 4900 50  0001 C CNN
+	1    5925 4900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10875 3250 11050 3250
-Connection ~ 11050 3250
-$Comp
-L LoRa_PCIe_GW-rescue:VCC_MAIN #PWR0181
-U 1 1 60AA4170
-P 7475 5025
-F 0 "#PWR0181" H 7475 4800 50  0001 C CNN
-F 1 "VCC_MAIN" H 7475 5175 50  0000 C CNN
-F 2 "" H 7225 5025 50  0001 C CNN
-F 3 "" H 7225 5025 50  0001 C CNN
-	1    7475 5025
-	1    0    0    -1  
-$EndComp
-$Comp
-L LoRa_PCIe_GW-rescue:VCC_MAIN #PWR0182
-U 1 1 60AA834D
-P 6400 5600
-F 0 "#PWR0182" H 6400 5375 50  0001 C CNN
-F 1 "VCC_MAIN" H 6400 5750 50  0000 C CNN
-F 2 "" H 6150 5600 50  0001 C CNN
-F 3 "" H 6150 5600 50  0001 C CNN
-	1    6400 5600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8100 5625 7150 5625
-Wire Wire Line
-	6400 5625 6400 5600
-Connection ~ 6775 5625
-Wire Wire Line
-	6775 5625 6400 5625
-Wire Wire Line
-	7150 5825 7150 5625
-Connection ~ 7150 5625
-Wire Wire Line
-	7150 5625 6775 5625
-Wire Wire Line
-	7550 5825 8100 5825
-$Comp
-L LoRa_PCIe_GW-rescue:GND #PWR0183
-U 1 1 60AC5D94
-P 6775 5925
-F 0 "#PWR0183" H 6775 6050 50  0001 C CNN
-F 1 "GND" H 6775 5775 50  0000 C CNN
-F 2 "" H 6575 5925 50  0001 C CNN
-F 3 "" H 6575 5925 50  0001 C CNN
-	1    6775 5925
-	1    0    0    -1  
-$EndComp
-$Comp
-L LoRa_PCIe_GW-rescue:GND #PWR0184
-U 1 1 60ACA947
-P 8600 6225
-F 0 "#PWR0184" H 8600 6350 50  0001 C CNN
-F 1 "GND" H 8600 6075 50  0000 C CNN
-F 2 "" H 8400 6225 50  0001 C CNN
-F 3 "" H 8400 6225 50  0001 C CNN
-	1    8600 6225
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8800 6225 8600 6225
-Connection ~ 8600 6225
-$Comp
-L LoRa_PCIe_GW-rescue:GND #PWR0185
-U 1 1 60ACEF6F
-P 10100 5925
-F 0 "#PWR0185" H 10100 6050 50  0001 C CNN
-F 1 "GND" H 10100 5775 50  0000 C CNN
-F 2 "" H 9900 5925 50  0001 C CNN
-F 3 "" H 9900 5925 50  0001 C CNN
-	1    10100 5925
-	1    0    0    -1  
-$EndComp
-$Comp
-L LoRa_PCIe_GW-rescue:GND #PWR0186
-U 1 1 60AD11CC
-P 11225 5925
-F 0 "#PWR0186" H 11225 6050 50  0001 C CNN
-F 1 "GND" H 11225 5775 50  0000 C CNN
-F 2 "" H 11025 5925 50  0001 C CNN
-F 3 "" H 11025 5925 50  0001 C CNN
-	1    11225 5925
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	11000 5625 11225 5625
-$Comp
-L LoRa_PCIe_GW-rescue:VDD_RADIO #PWR0187
-U 1 1 60AD7D23
-P 11225 5625
-F 0 "#PWR0187" H 11215 5375 50  0001 C CNN
-F 1 "VDD_RADIO" H 11235 5798 50  0000 C CNN
-F 2 "" H 11225 5625 50  0001 C CNN
-F 3 "" H 11225 5625 50  0001 C CNN
-	1    11225 5625
-	1    0    0    -1  
-$EndComp
-Connection ~ 11225 5625
-Wire Wire Line
-	9300 5625 10100 5625
-Connection ~ 10100 5625
-Wire Wire Line
-	10100 5625 10375 5625
-Wire Wire Line
-	8875 5100 9300 5100
-Wire Wire Line
-	9300 5100 9300 5625
-Connection ~ 9300 5625
-Wire Wire Line
-	8475 5100 7475 5100
-Wire Wire Line
-	7475 5100 7475 5025
-$Comp
-L LoRa_PCIe_GW-rescue:GND #PWR0188
-U 1 1 60AEBBD9
-P 7175 7750
-F 0 "#PWR0188" H 7175 7875 50  0001 C CNN
-F 1 "GND" H 7175 7600 50  0000 C CNN
-F 2 "" H 6975 7750 50  0001 C CNN
-F 3 "" H 6975 7750 50  0001 C CNN
-	1    7175 7750
-	1    0    0    -1  
-$EndComp
-$Comp
-L LoRa_PCIe_GW-rescue:GND #PWR0189
-U 1 1 60AEF864
-P 8600 8050
-F 0 "#PWR0189" H 8600 8175 50  0001 C CNN
-F 1 "GND" H 8600 7900 50  0000 C CNN
-F 2 "" H 8400 8050 50  0001 C CNN
-F 3 "" H 8400 8050 50  0001 C CNN
-	1    8600 8050
-	1    0    0    -1  
-$EndComp
-$Comp
-L LoRa_PCIe_GW-rescue:GND #PWR0190
-U 1 1 60AF35FB
-P 10125 7750
-F 0 "#PWR0190" H 10125 7875 50  0001 C CNN
-F 1 "GND" H 10125 7600 50  0000 C CNN
-F 2 "" H 9925 7750 50  0001 C CNN
-F 3 "" H 9925 7750 50  0001 C CNN
-	1    10125 7750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8100 7450 7175 7450
-Connection ~ 7175 7450
-Wire Wire Line
-	7175 7450 6250 7450
-$Comp
-L LoRa_PCIe_GW-rescue:VCC_MAIN #PWR0191
-U 1 1 60B01DBD
-P 6250 7450
-F 0 "#PWR0191" H 6250 7225 50  0001 C CNN
-F 1 "VCC_MAIN" H 6250 7600 50  0000 C CNN
-F 2 "" H 6000 7450 50  0001 C CNN
-F 3 "" H 6000 7450 50  0001 C CNN
-	1    6250 7450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8800 8050 8600 8050
-Connection ~ 8600 8050
-Wire Wire Line
-	9300 7450 9500 7450
-Connection ~ 10125 7450
-Wire Wire Line
-	10125 7450 10425 7450
-Wire Wire Line
-	9300 7650 9500 7650
-Wire Wire Line
-	9500 7650 9500 7450
-Connection ~ 9500 7450
-Wire Wire Line
-	9500 7450 10125 7450
-$Comp
-L LoRa_PCIe_GW-rescue:VCC_FEM1 #PWR0192
-U 1 1 60B15912
-P 10125 7450
-F 0 "#PWR0192" H 10125 7260 50  0001 C CNN
-F 1 "VCC_FEM1" H 10135 7623 50  0000 C CNN
-F 2 "" H 9855 7490 50  0001 C CNN
-F 3 "" H 9855 7490 50  0001 C CNN
-	1    10125 7450
-	1    0    0    -1  
-$EndComp
-$Comp
-L LoRa_PCIe_GW-rescue:VCC_FEM #PWR0193
-U 1 1 60B19EB0
-P 11250 7450
-F 0 "#PWR0193" H 11240 7200 50  0001 C CNN
-F 1 "VCC_FEM" H 11260 7623 50  0000 C CNN
-F 2 "" H 11010 7480 50  0001 C CNN
-F 3 "" H 11010 7480 50  0001 C CNN
-	1    11250 7450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	11050 7450 11250 7450
+	5750 4900 5925 4900
+Connection ~ 5925 4900
 $Comp
 L LoRa_PCIe_GW-rescue:GND #PWR0194
 U 1 1 60B2187F
-P 4075 6625
-F 0 "#PWR0194" H 4075 6750 50  0001 C CNN
-F 1 "GND" H 4075 6475 50  0000 C CNN
-F 2 "" H 3875 6625 50  0001 C CNN
-F 3 "" H 3875 6625 50  0001 C CNN
-	1    4075 6625
+P 4400 7800
+F 0 "#PWR0194" H 4400 7925 50  0001 C CNN
+F 1 "GND" H 4400 7650 50  0000 C CNN
+F 2 "" H 4200 7800 50  0001 C CNN
+F 3 "" H 4200 7800 50  0001 C CNN
+	1    4400 7800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3975 6600 4075 6600
+	4300 7775 4400 7775
 Wire Wire Line
-	4075 6600 4075 6625
+	4400 7775 4400 7800
 $Comp
 L LoRa_PCIe_GW-rescue:GND #PWR0195
 U 1 1 60B27564
-P 3475 6975
-F 0 "#PWR0195" H 3475 7100 50  0001 C CNN
-F 1 "GND" H 3475 6825 50  0000 C CNN
-F 2 "" H 3275 6975 50  0001 C CNN
-F 3 "" H 3275 6975 50  0001 C CNN
-	1    3475 6975
+P 3800 8150
+F 0 "#PWR0195" H 3800 8275 50  0001 C CNN
+F 1 "GND" H 3800 8000 50  0000 C CNN
+F 2 "" H 3600 8150 50  0001 C CNN
+F 3 "" H 3600 8150 50  0001 C CNN
+	1    3800 8150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3475 6950 3475 6975
+	3800 8125 3800 8150
 Wire Wire Line
-	3975 6400 4250 6400
+	4300 7575 4575 7575
 $Comp
 L LoRa_PCIe_GW-rescue:Cap- C222
 U 1 1 6039201A
-P 2275 5850
-F 0 "C222" V 2425 5550 60  0000 L BNN
-F 1 "2.2uF" V 2525 5550 60  0000 L BNN
-F 2 "LoRa_PCIe_GW:ccer_603_smd_small" H 2525 5550 60  0001 C CNN
-F 3 "" H 2525 5550 60  0000 C CNN
-F 4 "2.2µF ±10% 10V Ceramic Capacitor X7R 0603 (1608 Metric)" H 2275 5850 50  0001 C CNN "Description"
-F 5 "Murata" H 2275 5850 50  0001 C CNN "Manufacturer"
-F 6 "GRM188R71A225KE15D" H 2275 5850 50  0001 C CNN "Part Number"
-F 7 "0.039" H 2275 5850 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GRM188R71A225KE15D/1033256" H 2275 5850 50  0001 C CNN "Supplier Link"
-	1    2275 5850
+P 2600 7025
+F 0 "C222" V 2750 6725 60  0000 L BNN
+F 1 "2.2uF" V 2850 6725 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:ccer_603_smd_small" H 2850 6725 60  0001 C CNN
+F 3 "" H 2850 6725 60  0000 C CNN
+F 4 "2.2µF ±10% 10V Ceramic Capacitor X7R 0603 (1608 Metric)" H 2600 7025 50  0001 C CNN "Description"
+F 5 "Murata" H 2600 7025 50  0001 C CNN "Manufacturer"
+F 6 "GRM188R71A225KE15D" H 2600 7025 50  0001 C CNN "Part Number"
+F 7 "0.039" H 2600 7025 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GRM188R71A225KE15D/1033256" H 2600 7025 50  0001 C CNN "Supplier Link"
+	1    2600 7025
 	0    1    1    0   
 $EndComp
 $Comp
 L LoRa_PCIe_GW-rescue:GND #PWR0196
 U 1 1 60B37D3B
-P 2275 6150
-F 0 "#PWR0196" H 2275 6275 50  0001 C CNN
-F 1 "GND" H 2275 6000 50  0000 C CNN
-F 2 "" H 2075 6150 50  0001 C CNN
-F 3 "" H 2075 6150 50  0001 C CNN
-	1    2275 6150
+P 2600 7325
+F 0 "#PWR0196" H 2600 7450 50  0001 C CNN
+F 1 "GND" H 2600 7175 50  0000 C CNN
+F 2 "" H 2400 7325 50  0001 C CNN
+F 3 "" H 2400 7325 50  0001 C CNN
+	1    2600 7325
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2550 6150 2275 6150
-Connection ~ 2275 6150
+	2875 7325 2600 7325
+Connection ~ 2600 7325
 Wire Wire Line
-	2275 5850 2550 5850
+	2600 7025 2875 7025
 Wire Wire Line
-	3475 5850 3475 6050
-Connection ~ 2550 5850
+	3800 7025 3800 7225
+Connection ~ 2875 7025
 Wire Wire Line
-	2550 5850 3475 5850
+	2875 7025 3800 7025
 $Comp
 L LoRa_PCIe_GW-rescue:VCCIO33 #PWR0197
 U 1 1 60B45077
-P 2275 5850
-F 0 "#PWR0197" H 2275 5650 50  0001 C CNN
-F 1 "VCCIO33" H 2285 6023 50  0000 C CNN
-F 2 "" H 2175 5950 50  0001 C CNN
-F 3 "" H 2175 5950 50  0001 C CNN
-	1    2275 5850
+P 2600 7025
+F 0 "#PWR0197" H 2600 6825 50  0001 C CNN
+F 1 "VCCIO33" H 2610 7198 50  0000 C CNN
+F 2 "" H 2500 7125 50  0001 C CNN
+F 3 "" H 2500 7125 50  0001 C CNN
+	1    2600 7025
 	1    0    0    -1  
 $EndComp
-Connection ~ 2275 5850
+Connection ~ 2600 7025
 $Comp
 L LoRa_PCIe_GW-rescue:VCCIO33 #PWR0198
 U 1 1 60B45BE2
-P 1300 5950
-F 0 "#PWR0198" H 1300 5750 50  0001 C CNN
-F 1 "VCCIO33" H 1310 6123 50  0000 C CNN
-F 2 "" H 1200 6050 50  0001 C CNN
-F 3 "" H 1200 6050 50  0001 C CNN
-	1    1300 5950
+P 1625 7125
+F 0 "#PWR0198" H 1625 6925 50  0001 C CNN
+F 1 "VCCIO33" H 1635 7298 50  0000 C CNN
+F 2 "" H 1525 7225 50  0001 C CNN
+F 3 "" H 1525 7225 50  0001 C CNN
+	1    1625 7125
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2975 6400 1075 6400
+	3300 7575 1400 7575
 Wire Wire Line
-	1075 6400 1075 6350
+	1400 7575 1400 7525
 Wire Wire Line
-	2975 6600 1475 6600
+	3300 7775 1800 7775
 Wire Wire Line
-	1475 6600 1475 6350
+	1800 7775 1800 7525
 Wire Wire Line
-	1475 5950 1300 5950
-Connection ~ 1300 5950
+	1800 7125 1625 7125
+Connection ~ 1625 7125
 Wire Wire Line
-	1075 5950 1300 5950
+	1400 7125 1625 7125
 Wire Wire Line
-	3475 5850 4250 5850
+	3800 7025 4575 7025
 Wire Wire Line
-	4250 5850 4250 6000
-Connection ~ 3475 5850
+	4575 7025 4575 7175
+Connection ~ 3800 7025
 $Comp
 L LoRa_PCIe_GW-rescue:Resistor- R?
 U 1 1 63E870E5
-P 4250 6400
+P 4575 7575
 AR Path="/63E870E5" Ref="R?"  Part="1" 
 AR Path="/60392D62/63E870E5" Ref="R205"  Part="1" 
-F 0 "R205" V 4450 6675 60  0000 R TNN
-F 1 "10k" V 4350 6625 60  0000 R TNN
-F 2 "LoRa_PCIe_GW:rlc_201_smd_small" H 4359 6589 60  0001 C CNN
-F 3 "" H 4359 6589 60  0001 C CNN
-F 4 "10 kOhms ±1% 0.05W, 1/20W Chip Resistor 0201  Thick Film" H 4250 6400 50  0001 C CNN "Description"
-F 5 "Vishay Dale" H 4250 6400 50  0001 C CNN "Manufacturer"
-F 6 "CRCW020110K0" H 4250 6400 50  0001 C CNN "Part Number"
-F 7 "0.037" H 4250 6400 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/vishay-dale/CRCW020110K0FKED/1967989" H 4250 6400 50  0001 C CNN "Supplier Link"
-	1    4250 6400
+F 0 "R205" V 4775 7850 60  0000 R TNN
+F 1 "47k" V 4675 7800 60  0000 R TNN
+F 2 "LoRa_PCIe_GW:rlc_201_smd_small" H 4684 7764 60  0001 C CNN
+F 3 "" H 4684 7764 60  0001 C CNN
+F 4 "47 kOhms ±5% 0.05W, 1/20W Chip Resistor 0201  Thick Film" H 4575 7575 50  0001 C CNN "Description"
+F 5 "Vishay Dale" H 4575 7575 50  0001 C CNN "Manufacturer"
+F 6 "CRCW020147K0" H 4575 7575 50  0001 C CNN "Part Number"
+F 7 "0.039" H 4575 7575 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/vishay-dale/CRCW020147K0FKED/1968131" H 4575 7575 50  0001 C CNN "Supplier Link"
+	1    4575 7575
 	0    -1   -1   0   
 $EndComp
-Text GLabel 7500 6075 0    50   Input ~ 0
-POWER_EN
-Wire Wire Line
-	7550 6075 7550 5825
-Connection ~ 7550 5825
-Wire Wire Line
-	7550 6075 7500 6075
-Text GLabel 1025 6600 0    50   BiDi ~ 0
+Text GLabel 1350 7775 0    50   BiDi ~ 0
 I2C_SCL
-Text GLabel 1025 6400 0    50   BiDi ~ 0
+Text GLabel 1350 7575 0    50   BiDi ~ 0
 I2C_SDA
 Wire Wire Line
-	1025 6400 1075 6400
-Connection ~ 1075 6400
+	1350 7575 1400 7575
+Connection ~ 1400 7575
 Wire Wire Line
-	1025 6600 1475 6600
-Connection ~ 1475 6600
+	1350 7775 1800 7775
+Connection ~ 1800 7775
 $Comp
 L LoRa_PCIe_GW-rescue:Cap- C201
 U 1 1 60392015
-P 7475 1700
-F 0 "C201" V 7645 1800 60  0000 L BNN
-F 1 "1uF" V 7735 1800 60  0000 L BNN
-F 2 "LoRa_PCIe_GW:ccer_402_smd_small" H 7735 1800 60  0001 C CNN
-F 3 "" H 7735 1800 60  0000 C CNN
-F 4 "1µF ±20% 10V Ceramic Capacitor X5R 0402 (1005 Metric)" H 7475 1700 50  0001 C CNN "Description"
-F 5 "Murata" H 7475 1700 50  0001 C CNN "Manufacturer"
-F 6 "GRM153R61A105ME95D" H 7475 1700 50  0001 C CNN "Part Number"
-F 7 "0.038" H 7475 1700 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GRM153R61A105ME95D/4904820" H 7475 1700 50  0001 C CNN "Supplier Link"
-	1    7475 1700
+P 1050 3050
+F 0 "C201" V 1150 2775 60  0000 L BNN
+F 1 "1uF" V 1250 2775 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:ccer_402_smd_small" H 1310 3150 60  0001 C CNN
+F 3 "" H 1310 3150 60  0000 C CNN
+F 4 "1µF ±20% 10V Ceramic Capacitor X5R 0402 (1005 Metric)" H 1050 3050 50  0001 C CNN "Description"
+F 5 "Murata" H 1050 3050 50  0001 C CNN "Manufacturer"
+F 6 "GRM153R61A105ME95D" H 1050 3050 50  0001 C CNN "Part Number"
+F 7 "0.038" H 1050 3050 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GRM153R61A105ME95D/4904820" H 1050 3050 50  0001 C CNN "Supplier Link"
+	1    1050 3050
 	0    1    1    0   
 $EndComp
 $Comp
 L LoRa_PCIe_GW-rescue:TI-TPS62242DRV6-1600X1000TP- U202
 U 1 1 60392013
-P 8375 3150
-F 0 "U202" H 8350 3175 60  0000 L BNN
-F 1 "TPS62242DRV" H 8650 3175 60  0000 L BNN
-F 2 "LoRa_PCIe_GW:DRV0006A_V" H 8645 3150 60  0001 C CNN
-F 3 "" H 8645 3150 60  0000 C CNN
-F 4 "Buck Switching Regulator IC Positive Fixed 1.2V 1 Output 300mA 6-WDFN Exposed Pad" H 8375 3150 50  0001 C CNN "Description"
-F 5 "Texas Instruments" H 8375 3150 50  0001 C CNN "Manufacturer"
-F 6 "TPS62242DRV" H 8375 3150 50  0001 C CNN "Part Number"
-F 7 "0.53" H 8375 3150 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/texas-instruments/TPS62242DRVR/1908036" H 8375 3150 50  0001 C CNN "Supplier Link"
-	1    8375 3150
+P 3250 4800
+F 0 "U202" H 3225 4825 60  0000 L BNN
+F 1 "TPS62242DRV" H 3525 4825 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:DRV0006A_V" H 3520 4800 60  0001 C CNN
+F 3 "" H 3520 4800 60  0000 C CNN
+F 4 "Buck Switching Regulator IC Positive Fixed 1.2V 1 Output 300mA 6-WDFN Exposed Pad" H 3250 4800 50  0001 C CNN "Description"
+F 5 "Texas Instruments" H 3250 4800 50  0001 C CNN "Manufacturer"
+F 6 "TPS62242DRV" H 3250 4800 50  0001 C CNN "Part Number"
+F 7 "0.53" H 3250 4800 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/texas-instruments/TPS62242DRVR/1908036" H 3250 4800 50  0001 C CNN "Supplier Link"
+	1    3250 4800
 	1    0    0    -1  
 $EndComp
-Text GLabel 8075 7650 0    50   Input ~ 0
-SX1302_CSD
-Wire Wire Line
-	8100 7650 8075 7650
 $Comp
 L power:PWR_FLAG #FLG?
 U 1 1 60F79DCF
@@ -1179,176 +749,6 @@ F 3 "" H 2075 10275 50  0001 C CNN
 	1    2275 10275
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10500 9450 10500 9475
-Wire Wire Line
-	10325 9450 10500 9450
-$Comp
-L LoRa_PCIe_GW-rescue:Ferrite_beads- FB212
-U 1 1 6039200A
-P 9700 9450
-F 0 "FB212" H 9870 9530 60  0000 L BNN
-F 1 "Ferrite beads" H 10000 9350 60  0001 L BNN
-F 2 "LoRa_PCIe_GW:rlc_402_smd_small" H 9780 9340 60  0001 C CNN
-F 3 "" H 9780 9340 60  0000 C CNN
-F 4 "10 Ohms @ 100MHz 1 Power Line Ferrite Bead 0402 (1005 Metric) 1A 25mOhm" H 9700 9450 50  0001 C CNN "Description"
-F 5 "Murata" H 9700 9450 50  0001 C CNN "Manufacturer"
-F 6 "BLM15PG100SN1D" H 9700 9450 50  0001 C CNN "Part Number"
-F 7 "0.027" H 9700 9450 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/murata-electronics/BLM15PG100SN1D/2587980" H 9700 9450 50  0001 C CNN "Supplier Link"
-	1    9700 9450
-	1    0    0    -1  
-$EndComp
-$Comp
-L LoRa_PCIe_GW-rescue:Cap- C226
-U 1 1 615A5676
-P 9475 9450
-F 0 "C226" V 9645 9550 60  0000 L BNN
-F 1 "1uF" V 9735 9550 60  0000 L BNN
-F 2 "LoRa_PCIe_GW:ccer_402_smd_small" H 9735 9550 60  0001 C CNN
-F 3 "" H 9735 9550 60  0000 C CNN
-F 4 "1µF ±20% 10V Ceramic Capacitor X5R 0402 (1005 Metric)" H 9475 9450 50  0001 C CNN "Description"
-F 5 "Murata" H 9475 9450 50  0001 C CNN "Manufacturer"
-F 6 "GRM153R61A105ME95D" H 9475 9450 50  0001 C CNN "Part Number"
-F 7 "0.038" H 9475 9450 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GRM153R61A105ME95D/4904820" H 9475 9450 50  0001 C CNN "Supplier Link"
-	1    9475 9450
-	0    1    1    0   
-$EndComp
-$Comp
-L LoRa_PCIe_GW-rescue:GND #PWR07
-U 1 1 615A567C
-P 9475 9750
-F 0 "#PWR07" H 9475 9875 50  0001 C CNN
-F 1 "GND" H 9475 9600 50  0000 C CNN
-F 2 "" H 9275 9750 50  0001 C CNN
-F 3 "" H 9275 9750 50  0001 C CNN
-	1    9475 9750
-	1    0    0    -1  
-$EndComp
-$Comp
-L LoRa_PCIe_GW-rescue:Cap- C225
-U 1 1 615A88AE
-P 7725 9450
-F 0 "C225" V 7895 9550 60  0000 L BNN
-F 1 "1uF" V 7985 9550 60  0000 L BNN
-F 2 "LoRa_PCIe_GW:ccer_402_smd_small" H 7985 9550 60  0001 C CNN
-F 3 "" H 7985 9550 60  0000 C CNN
-F 4 "1µF ±20% 10V Ceramic Capacitor X5R 0402 (1005 Metric)" H 7725 9450 50  0001 C CNN "Description"
-F 5 "Murata" H 7725 9450 50  0001 C CNN "Manufacturer"
-F 6 "GRM153R61A105ME95D" H 7725 9450 50  0001 C CNN "Part Number"
-F 7 "0.038" H 7725 9450 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GRM153R61A105ME95D/4904820" H 7725 9450 50  0001 C CNN "Supplier Link"
-	1    7725 9450
-	0    1    1    0   
-$EndComp
-$Comp
-L LoRa_PCIe_GW-rescue:GND #PWR04
-U 1 1 615A88B4
-P 7725 9750
-F 0 "#PWR04" H 7725 9875 50  0001 C CNN
-F 1 "GND" H 7725 9600 50  0000 C CNN
-F 2 "" H 7525 9750 50  0001 C CNN
-F 3 "" H 7525 9750 50  0001 C CNN
-	1    7725 9750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7725 9450 8125 9450
-Wire Wire Line
-	8125 9650 8125 9450
-Wire Wire Line
-	9700 9450 9475 9450
-Connection ~ 9475 9450
-Wire Wire Line
-	9475 9450 9325 9450
-$Comp
-L LoRa_PCIe_GW-rescue:GND #PWR05
-U 1 1 615B981C
-P 8625 10050
-F 0 "#PWR05" H 8625 10175 50  0001 C CNN
-F 1 "GND" H 8625 9900 50  0000 C CNN
-F 2 "" H 8425 10050 50  0001 C CNN
-F 3 "" H 8425 10050 50  0001 C CNN
-	1    8625 10050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8825 10050 8625 10050
-$Comp
-L LoRa_PCIe_GW-rescue:Resistor- R221
-U 1 1 615CC9C4
-P 8925 8975
-F 0 "R221" H 9225 8935 60  0000 R TNN
-F 1 "NC" H 9225 9115 60  0000 R TNN
-F 2 "LoRa_PCIe_GW:rlc_402_smd_small" H 9225 9115 60  0001 C CNN
-F 3 "" H 9225 9115 60  0000 C CNN
-F 4 "CRCW04020000ZSTD" H 8925 8975 50  0001 C CNN "Description"
-F 5 "Vishay Dale" H 8925 8975 50  0001 C CNN "Manufacturer"
-F 6 "CRCW04020000ZSTD" H 8925 8975 50  0001 C CNN "Part Number"
-F 7 "0.014" H 8925 8975 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/vishay-dale/CRCW04020000ZSTD/1226552" H 8925 8975 50  0001 C CNN "Supplier Link"
-	1    8925 8975
-	-1   0    0    1   
-$EndComp
-Text Notes 9575 9100 0    96   ~ 19
-VCCGNSS EVA-M8 : 3.3V
-$Comp
-L LoRa_PCIe_GW-rescue:VCC_MAIN #PWR0275
-U 1 1 615ED583
-P 7725 9450
-F 0 "#PWR0275" H 7725 9225 50  0001 C CNN
-F 1 "VCC_MAIN" H 7725 9600 50  0000 C CNN
-F 2 "" H 7475 9450 50  0001 C CNN
-F 3 "" H 7475 9450 50  0001 C CNN
-	1    7725 9450
-	1    0    0    -1  
-$EndComp
-Connection ~ 7725 9450
-Wire Wire Line
-	8925 8975 9475 8975
-$Comp
-L LoRa_PCIe_GW-rescue:Cap- C224
-U 1 1 6173DACE
-P 10500 9475
-F 0 "C224" V 10670 9575 60  0000 L BNN
-F 1 "4.7uF" V 10750 9575 60  0000 L BNN
-F 2 "LoRa_PCIe_GW:ccer_402_smd_small" H 10750 9575 60  0001 C CNN
-F 3 "" H 10750 9575 60  0000 C CNN
-F 4 "4.7µF ±20% 6.3V Ceramic Capacitor X5R 0402 (1005 Metric)" H 10500 9475 50  0001 C CNN "Description"
-F 5 "Murata" H 10500 9475 50  0001 C CNN "Manufacturer"
-F 6 "GRM155R60J475ME47D" H 10500 9475 50  0001 C CNN "Part Number"
-F 7 "0.089" H 10500 9475 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R60J475ME47D/3694656" H 10500 9475 50  0001 C CNN "Supplier Link"
-	1    10500 9475
-	0    1    1    0   
-$EndComp
-$Comp
-L LoRa_PCIe_GW-rescue:GND #PWR0171
-U 1 1 6173DAD4
-P 10500 9775
-F 0 "#PWR0171" H 10500 9900 50  0001 C CNN
-F 1 "GND" H 10500 9625 50  0000 C CNN
-F 2 "" H 10300 9775 50  0001 C CNN
-F 3 "" H 10300 9775 50  0001 C CNN
-	1    10500 9775
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8525 8975 8125 8975
-Wire Wire Line
-	9475 8975 9475 9450
-$Comp
-L LoRa_PCIe_GW-rescue:VCC_MAIN #PWR0277
-U 1 1 6065A98F
-P 8125 8975
-F 0 "#PWR0277" H 8125 8750 50  0001 C CNN
-F 1 "VCC_MAIN" H 8125 9125 50  0000 C CNN
-F 2 "" H 7875 8975 50  0001 C CNN
-F 3 "" H 7875 8975 50  0001 C CNN
-	1    8125 8975
-	1    0    0    -1  
-$EndComp
 $Comp
 L LoRa_PCIe_GW-rescue:Logo- Logo4
 U 1 1 6047F9B9
@@ -1386,52 +786,1214 @@ F 4 "Open Source" H 1100 10000 50  0000 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
+L LoRa_PCIe_GW-rescue:TPS22908 U200
+U 1 1 60BAF8FB
+P 2175 1650
+F 0 "U200" H 2475 1725 50  0000 C CNN
+F 1 "NC" H 2725 1725 50  0000 C CNN
+F 2 "LoRa_PCIe_GW:DSBGA-4" H 1875 1825 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/tps22908.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1617801788421" H 1875 1825 50  0001 C CNN
+F 4 "Power Switch/Driver 1:1 P-Channel 1A 4-DSBGA (0.9x0.9)" H 2175 1650 50  0001 C CNN "Description"
+F 5 "Texas Instruments" H 2175 1650 50  0001 C CNN "Manufacturer"
+F 6 "TPS22908" H 2175 1650 50  0001 C CNN "Part Number"
+F 7 "0.28" H 2175 1650 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/texas-instruments/TPS22908YZTT/3588754" H 2175 1650 50  0001 C CNN "Supplier Link"
+	1    2175 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1975 1750 1900 1750
+$Comp
+L LoRa_PCIe_GW-rescue:VCC3V3_IN #PWR03
+U 1 1 60BE1DAF
+P 1000 1750
+F 0 "#PWR03" H 1000 1550 50  0001 C CNN
+F 1 "VCC3V3_IN" H 1015 1923 50  0000 C CNN
+F 2 "" H 650 1790 50  0001 C CNN
+F 3 "" H 650 1790 50  0001 C CNN
+	1    1000 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:GND #PWR012
+U 1 1 60BE6C72
+P 2975 2050
+F 0 "#PWR012" H 2975 2175 50  0001 C CNN
+F 1 "GND" H 2975 1900 50  0000 C CNN
+F 2 "" H 2775 2050 50  0001 C CNN
+F 3 "" H 2775 2050 50  0001 C CNN
+	1    2975 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2975 1950 2975 2050
+Wire Wire Line
+	3600 3050 3275 3050
+Wire Wire Line
+	3275 1300 3275 1750
+Wire Wire Line
+	2275 1300 1900 1300
+Wire Wire Line
+	1900 1300 1900 1750
+Connection ~ 1900 1750
+Wire Wire Line
+	1900 1750 1000 1750
+Wire Wire Line
+	4225 3050 4550 3050
+$Comp
+L LoRa_PCIe_GW-rescue:Cap- C200
+U 1 1 60C45940
+P 1800 3400
+F 0 "C200" V 1970 3500 60  0000 L BNN
+F 1 "1uF" V 2060 3500 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:ccer_402_smd_small" H 2060 3500 60  0001 C CNN
+F 3 "" H 2060 3500 60  0000 C CNN
+F 4 "1µF ±20% 10V Ceramic Capacitor X5R 0402 (1005 Metric)" H 1800 3400 50  0001 C CNN "Description"
+F 5 "Murata" H 1800 3400 50  0001 C CNN "Manufacturer"
+F 6 "GRM153R61A105ME95D" H 1800 3400 50  0001 C CNN "Part Number"
+F 7 "0.038" H 1800 3400 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GRM153R61A105ME95D/4904820" H 1800 3400 50  0001 C CNN "Supplier Link"
+	1    1800 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:GND #PWR011
+U 1 1 60C4882C
+P 1800 3700
+F 0 "#PWR011" H 1800 3825 50  0001 C CNN
+F 1 "GND" H 1800 3550 50  0000 C CNN
+F 2 "" H 1600 3700 50  0001 C CNN
+F 3 "" H 1600 3700 50  0001 C CNN
+	1    1800 3700
+	1    0    0    -1  
+$EndComp
+Connection ~ 1050 3050
+Wire Wire Line
+	1050 3050 1850 3050
+$Comp
+L LoRa_PCIe_GW-rescue:Resistor- R?
+U 1 1 60C4F621
+P 1400 3250
+AR Path="/60C4F621" Ref="R?"  Part="1" 
+AR Path="/60392D62/60C4F621" Ref="R200"  Part="1" 
+F 0 "R200" H 1325 3125 60  0000 L BNN
+F 1 "0R" H 1625 3125 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:rlc_201_smd_small" H 1737 3153 60  0001 C CNN
+F 3 "" H 1737 3153 60  0000 C CNN
+F 4 "0 Ohms Jumper 0.05W, 1/20W Chip Resistor 0201 (0603 Metric)  Thick Film" H 1400 3250 50  0001 C CNN "Description"
+F 5 "Vishay Dale" H 1400 3250 50  0001 C CNN "Manufacturer"
+F 6 "CRCW02010000Z0ED" H 1400 3250 50  0001 C CNN "Part Number"
+F 7 "0.006" H 1400 3250 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/vishay-dale/CRCW02010000Z0ED/1178434?s=N4IgTCBcDaIMICU4HUAMZUEZU9QLVQFEAREAXQF8g" H 1400 3250 50  0001 C CNN "Supplier Link"
+	1    1400 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 3250 1800 3400
+Connection ~ 1800 3250
+$Comp
+L LoRa_PCIe_GW-rescue:VCCCORE12 #PWR09
+U 1 1 60C561A5
+P 1375 3250
+F 0 "#PWR09" H 1375 3050 50  0001 C CNN
+F 1 "VCCCORE12" H 1375 3400 50  0000 C CNN
+F 2 "" H 1375 3250 50  0001 C CNN
+F 3 "" H 1375 3250 50  0001 C CNN
+	1    1375 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 3250 1375 3250
+Wire Wire Line
+	12300 7800 12300 7825
+Wire Wire Line
+	12125 7800 12300 7800
+$Comp
+L LoRa_PCIe_GW-rescue:Ferrite_beads- FB212
+U 1 1 6039200A
+P 11500 7800
+F 0 "FB212" H 11670 7880 60  0000 L BNN
+F 1 "Ferrite beads" H 11800 7700 60  0001 L BNN
+F 2 "LoRa_PCIe_GW:rlc_402_smd_small" H 11580 7690 60  0001 C CNN
+F 3 "" H 11580 7690 60  0000 C CNN
+F 4 "10 Ohms @ 100MHz 1 Power Line Ferrite Bead 0402 (1005 Metric) 1A 25mOhm" H 11500 7800 50  0001 C CNN "Description"
+F 5 "Murata" H 11500 7800 50  0001 C CNN "Manufacturer"
+F 6 "BLM15PG100SN1D" H 11500 7800 50  0001 C CNN "Part Number"
+F 7 "0.027" H 11500 7800 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/murata-electronics/BLM15PG100SN1D/2587980" H 11500 7800 50  0001 C CNN "Supplier Link"
+	1    11500 7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:Cap- C226
+U 1 1 615A5676
+P 11275 7800
+F 0 "C226" V 11445 7900 60  0000 L BNN
+F 1 "1uF" V 11535 7900 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:ccer_402_smd_small" H 11535 7900 60  0001 C CNN
+F 3 "" H 11535 7900 60  0000 C CNN
+F 4 "1µF ±20% 10V Ceramic Capacitor X5R 0402 (1005 Metric)" H 11275 7800 50  0001 C CNN "Description"
+F 5 "Murata" H 11275 7800 50  0001 C CNN "Manufacturer"
+F 6 "GRM153R61A105ME95D" H 11275 7800 50  0001 C CNN "Part Number"
+F 7 "0.038" H 11275 7800 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GRM153R61A105ME95D/4904820" H 11275 7800 50  0001 C CNN "Supplier Link"
+	1    11275 7800
+	0    1    1    0   
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:GND #PWR07
+U 1 1 615A567C
+P 11275 8100
+F 0 "#PWR07" H 11275 8225 50  0001 C CNN
+F 1 "GND" H 11275 7950 50  0000 C CNN
+F 2 "" H 11075 8100 50  0001 C CNN
+F 3 "" H 11075 8100 50  0001 C CNN
+	1    11275 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:Cap- C225
+U 1 1 615A88AE
+P 9525 7800
+F 0 "C225" V 9695 7900 60  0000 L BNN
+F 1 "1uF" V 9785 7900 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:ccer_402_smd_small" H 9785 7900 60  0001 C CNN
+F 3 "" H 9785 7900 60  0000 C CNN
+F 4 "1µF ±20% 10V Ceramic Capacitor X5R 0402 (1005 Metric)" H 9525 7800 50  0001 C CNN "Description"
+F 5 "Murata" H 9525 7800 50  0001 C CNN "Manufacturer"
+F 6 "GRM153R61A105ME95D" H 9525 7800 50  0001 C CNN "Part Number"
+F 7 "0.038" H 9525 7800 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GRM153R61A105ME95D/4904820" H 9525 7800 50  0001 C CNN "Supplier Link"
+	1    9525 7800
+	0    1    1    0   
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:GND #PWR04
+U 1 1 615A88B4
+P 9525 8100
+F 0 "#PWR04" H 9525 8225 50  0001 C CNN
+F 1 "GND" H 9525 7950 50  0000 C CNN
+F 2 "" H 9325 8100 50  0001 C CNN
+F 3 "" H 9325 8100 50  0001 C CNN
+	1    9525 8100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9525 7800 9925 7800
+Wire Wire Line
+	9925 8000 9925 7800
+Wire Wire Line
+	11500 7800 11275 7800
+Connection ~ 11275 7800
+Wire Wire Line
+	11275 7800 11125 7800
+$Comp
+L LoRa_PCIe_GW-rescue:GND #PWR05
+U 1 1 615B981C
+P 10425 8400
+F 0 "#PWR05" H 10425 8525 50  0001 C CNN
+F 1 "GND" H 10425 8250 50  0000 C CNN
+F 2 "" H 10225 8400 50  0001 C CNN
+F 3 "" H 10225 8400 50  0001 C CNN
+	1    10425 8400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10625 8400 10425 8400
+$Comp
+L LoRa_PCIe_GW-rescue:Resistor- R221
+U 1 1 615CC9C4
+P 10725 7325
+F 0 "R221" H 11025 7285 60  0000 R TNN
+F 1 "NC" H 11025 7465 60  0000 R TNN
+F 2 "LoRa_PCIe_GW:rlc_402_smd_small" H 11025 7465 60  0001 C CNN
+F 3 "" H 11025 7465 60  0000 C CNN
+F 4 "CRCW04020000ZSTD" H 10725 7325 50  0001 C CNN "Description"
+F 5 "Vishay Dale" H 10725 7325 50  0001 C CNN "Manufacturer"
+F 6 "CRCW04020000ZSTD" H 10725 7325 50  0001 C CNN "Part Number"
+F 7 "0.014" H 10725 7325 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/vishay-dale/CRCW04020000ZSTD/1226552" H 10725 7325 50  0001 C CNN "Supplier Link"
+	1    10725 7325
+	-1   0    0    1   
+$EndComp
+Text Notes 11375 7450 0    96   ~ 19
+VCCGNSS EVA-M8 : 3.3V
+$Comp
+L LoRa_PCIe_GW-rescue:VCC_MAIN #PWR0275
+U 1 1 615ED583
+P 9525 7800
+F 0 "#PWR0275" H 9525 7575 50  0001 C CNN
+F 1 "VCC_MAIN" H 9525 7950 50  0000 C CNN
+F 2 "" H 9275 7800 50  0001 C CNN
+F 3 "" H 9275 7800 50  0001 C CNN
+	1    9525 7800
+	1    0    0    -1  
+$EndComp
+Connection ~ 9525 7800
+Wire Wire Line
+	10725 7325 11275 7325
+$Comp
+L LoRa_PCIe_GW-rescue:Cap- C224
+U 1 1 6173DACE
+P 12300 7825
+F 0 "C224" V 12470 7925 60  0000 L BNN
+F 1 "4.7uF" V 12550 7925 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:ccer_402_smd_small" H 12550 7925 60  0001 C CNN
+F 3 "" H 12550 7925 60  0000 C CNN
+F 4 "4.7µF ±20% 6.3V Ceramic Capacitor X5R 0402 (1005 Metric)" H 12300 7825 50  0001 C CNN "Description"
+F 5 "Murata" H 12300 7825 50  0001 C CNN "Manufacturer"
+F 6 "GRM155R60J475ME47D" H 12300 7825 50  0001 C CNN "Part Number"
+F 7 "0.089" H 12300 7825 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R60J475ME47D/3694656" H 12300 7825 50  0001 C CNN "Supplier Link"
+	1    12300 7825
+	0    1    1    0   
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:GND #PWR0171
+U 1 1 6173DAD4
+P 12300 8125
+F 0 "#PWR0171" H 12300 8250 50  0001 C CNN
+F 1 "GND" H 12300 7975 50  0000 C CNN
+F 2 "" H 12100 8125 50  0001 C CNN
+F 3 "" H 12100 8125 50  0001 C CNN
+	1    12300 8125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10325 7325 9925 7325
+Wire Wire Line
+	11275 7325 11275 7800
+$Comp
+L LoRa_PCIe_GW-rescue:VCC_MAIN #PWR0277
+U 1 1 6065A98F
+P 9925 7325
+F 0 "#PWR0277" H 9925 7100 50  0001 C CNN
+F 1 "VCC_MAIN" H 9925 7475 50  0000 C CNN
+F 2 "" H 9675 7325 50  0001 C CNN
+F 3 "" H 9675 7325 50  0001 C CNN
+	1    9925 7325
+	1    0    0    -1  
+$EndComp
+$Comp
 L LoRa_PCIe_GW-rescue:VCCGNSS #PWR?
 U 1 1 607F1CA0
-P 10500 9450
+P 12300 7800
 AR Path="/607F1CA0" Ref="#PWR?"  Part="1" 
 AR Path="/60392D79/607F1CA0" Ref="#PWR?"  Part="1" 
 AR Path="/60392D62/607F1CA0" Ref="#PWR0141"  Part="1" 
-F 0 "#PWR0141" H 10500 9240 50  0001 C CNN
-F 1 "VCCGNSS" H 10500 9600 50  0000 C CNN
-F 2 "" H 10500 9450 50  0001 C CNN
-F 3 "" H 10500 9450 50  0001 C CNN
-	1    10500 9450
+F 0 "#PWR0141" H 12300 7590 50  0001 C CNN
+F 1 "VCCGNSS" H 12300 7950 50  0000 C CNN
+F 2 "" H 12300 7800 50  0001 C CNN
+F 3 "" H 12300 7800 50  0001 C CNN
+	1    12300 7800
 	1    0    0    -1  
 $EndComp
 $Comp
 L LoRa_PCIe_GW-rescue:NCP114- U206
 U 1 1 60810E28
-P 8325 9850
-F 0 "U206" H 8325 10475 60  0000 L BNN
-F 1 "3V3" H 8800 10475 60  0000 L BNN
-F 2 "LoRa_PCIe_GW:UDFN4_1x1mm" H 8805 10450 60  0001 C CNN
-F 3 "" H 8805 10450 60  0000 C CNN
-F 4 "Linear Voltage Regulator IC Positive Fixed 1 Output  300mA 4-UDFN (1.0x1.0)" H 8325 9850 50  0001 C CNN "Description"
-F 5 "ON Semiconductor" H 8325 9850 50  0001 C CNN "Manufacturer"
-F 6 "NCP114AMX330TBG" H 8325 9850 50  0001 C CNN "Part Number"
-F 7 "0.078" H 8325 9850 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/on-semiconductor/NCP114AMX330TBG/6166731" H 8325 9850 50  0001 C CNN "Supplier Link"
-	1    8325 9850
+P 10125 8200
+F 0 "U206" H 10125 8825 60  0000 L BNN
+F 1 "3V3" H 10600 8825 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:UDFN4_1x1mm" H 10605 8800 60  0001 C CNN
+F 3 "" H 10605 8800 60  0000 C CNN
+F 4 "Linear Voltage Regulator IC Positive Fixed 1 Output  300mA 4-UDFN (1.0x1.0)" H 10125 8200 50  0001 C CNN "Description"
+F 5 "ON Semiconductor" H 10125 8200 50  0001 C CNN "Manufacturer"
+F 6 "NCP114AMX330TBG" H 10125 8200 50  0001 C CNN "Part Number"
+F 7 "0.078" H 10125 8200 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/on-semiconductor/NCP114AMX330TBG/6166731" H 10125 8200 50  0001 C CNN "Supplier Link"
+	1    10125 8200
 	1    0    0    -1  
 $EndComp
-Connection ~ 8625 10050
-Connection ~ 8125 9450
+Connection ~ 10425 8400
+Connection ~ 9925 7800
+Connection ~ 12300 7800
+Text Label 9575 5750 0    50   ~ 0
+U206_EN
+Wire Wire Line
+	8875 5000 8875 5125
+Connection ~ 8875 5000
+Wire Wire Line
+	8800 5000 8875 5000
+Wire Wire Line
+	8875 4875 8875 5000
+Wire Wire Line
+	9600 4425 9975 4425
+Text Label 9425 5125 0    50   ~ 0
+U206_EN
+Text Label 9400 4875 0    50   ~ 0
+U205_EN
+Text Label 9600 4425 0    50   ~ 0
+U205_EN
+Wire Wire Line
+	9375 4875 9750 4875
+Wire Wire Line
+	9375 5125 9750 5125
+Wire Wire Line
+	8875 4875 8975 4875
+Wire Wire Line
+	8975 5125 8875 5125
 $Comp
-L LoRa_PCIe_GW-rescue:Resistor- R202
+L LoRa_PCIe_GW-rescue:Resistor- R?
+U 1 1 60DF9A11
+P 8975 4875
+AR Path="/60DF9A11" Ref="R?"  Part="1" 
+AR Path="/60392D62/60DF9A11" Ref="R207"  Part="1" 
+F 0 "R207" H 9050 4750 60  0000 L BNN
+F 1 "0R" H 9312 4778 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:rlc_201_smd_small" H 9312 4778 60  0001 C CNN
+F 3 "" H 9312 4778 60  0000 C CNN
+F 4 "0 Ohms Jumper 0.05W, 1/20W Chip Resistor 0201 (0603 Metric)  Thick Film" H 8975 4875 50  0001 C CNN "Description"
+F 5 "Vishay Dale" H 8975 4875 50  0001 C CNN "Manufacturer"
+F 6 "CRCW02010000Z0ED" H 8975 4875 50  0001 C CNN "Part Number"
+F 7 "0.006" H 8975 4875 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/vishay-dale/CRCW02010000Z0ED/1178434?s=N4IgTCBcDaIMICU4HUAMZUEZU9QLVQFEAREAXQF8g" H 8975 4875 50  0001 C CNN "Supplier Link"
+	1    8975 4875
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:VCC3V3_IN #PWR0164
+U 1 1 60DE1462
+P 10900 3650
+F 0 "#PWR0164" H 10900 3450 50  0001 C CNN
+F 1 "VCC3V3_IN" H 10915 3823 50  0000 C CNN
+F 2 "" H 10550 3690 50  0001 C CNN
+F 3 "" H 10550 3690 50  0001 C CNN
+	1    10900 3650
+	1    0    0    -1  
+$EndComp
+Connection ~ 8675 5550
+$Comp
+L LoRa_PCIe_GW-rescue:VCC_MAIN #PWR0181
+U 1 1 60DDC3FB
+P 8675 5550
+F 0 "#PWR0181" H 8675 5325 50  0001 C CNN
+F 1 "VCC_MAIN" H 8675 5700 50  0000 C CNN
+F 2 "" H 8425 5550 50  0001 C CNN
+F 3 "" H 8425 5550 50  0001 C CNN
+	1    8675 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13125 4225 13450 4225
+Connection ~ 13125 4225
+Wire Wire Line
+	12925 5550 13125 5550
+Wire Wire Line
+	13125 5550 13125 4225
+Wire Wire Line
+	9125 6175 9025 6175
+Wire Wire Line
+	9650 5850 9850 5850
+Connection ~ 9650 5850
+Wire Wire Line
+	9650 6175 9650 5850
+Wire Wire Line
+	9525 6175 9650 6175
+Wire Wire Line
+	9850 5850 9950 5850
+Connection ~ 9850 5850
+$Comp
+L LoRa_PCIe_GW-rescue:Resistor- R?
+U 1 1 60D96FAF
+P 9125 6175
+AR Path="/60D96FAF" Ref="R?"  Part="1" 
+AR Path="/60392D62/60D96FAF" Ref="R213"  Part="1" 
+F 0 "R213" H 9200 6050 60  0000 L BNN
+F 1 "NC" H 9462 6078 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:rlc_201_smd_small" H 9462 6078 60  0001 C CNN
+F 3 "" H 9462 6078 60  0000 C CNN
+F 4 "0 Ohms Jumper 0.05W, 1/20W Chip Resistor 0201 (0603 Metric)  Thick Film" H 9125 6175 50  0001 C CNN "Description"
+F 5 "Vishay Dale" H 9125 6175 50  0001 C CNN "Manufacturer"
+F 6 "CRCW02010000Z0ED" H 9125 6175 50  0001 C CNN "Part Number"
+F 7 "0.006" H 9125 6175 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/vishay-dale/CRCW02010000Z0ED/1178434?s=N4IgTCBcDaIMICU4HUAMZUEZU9QLVQFEAREAXQF8g" H 9125 6175 50  0001 C CNN "Supplier Link"
+	1    9125 6175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 5750 9575 5750
+Wire Wire Line
+	9125 5550 8675 5550
+Connection ~ 9125 5550
+Wire Wire Line
+	9125 5850 9125 5550
+Wire Wire Line
+	8675 5550 8675 5575
+Wire Wire Line
+	9950 5550 9125 5550
+$Comp
+L LoRa_PCIe_GW-rescue:GND #PWR0280
+U 1 1 60D86470
+P 8675 5875
+F 0 "#PWR0280" H 8675 6000 50  0001 C CNN
+F 1 "GND" H 8675 5725 50  0000 C CNN
+F 2 "" H 8475 5875 50  0001 C CNN
+F 3 "" H 8475 5875 50  0001 C CNN
+	1    8675 5875
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:Cap- C205
+U 1 1 60D8646A
+P 8675 5575
+F 0 "C205" V 8845 5675 60  0000 L BNN
+F 1 "NC" V 8935 5675 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:ccer_603_smd_small" H 8935 5675 60  0001 C CNN
+F 3 "" H 8935 5675 60  0000 C CNN
+F 4 "4.7µF ±10% 16V Ceramic Capacitor X5R 0603 (1608 Metric)" H 8675 5575 50  0001 C CNN "Description"
+F 5 "Murata" H 8675 5575 50  0001 C CNN "Manufacturer"
+F 6 "GRM188R61C475KAAJD" H 8675 5575 50  0001 C CNN "Part Number"
+F 7 "0.089" H 8675 5575 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GRM188R61C475KAAJD/5027566" H 8675 5575 50  0001 C CNN "Supplier Link"
+	1    8675 5575
+	0    1    1    0   
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:GND #PWR0281
+U 1 1 60D78C40
+P 9850 6250
+F 0 "#PWR0281" H 9850 6375 50  0001 C CNN
+F 1 "GND" H 9850 6100 50  0000 C CNN
+F 2 "" H 9650 6250 50  0001 C CNN
+F 3 "" H 9650 6250 50  0001 C CNN
+	1    9850 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:Resistor- R?
+U 1 1 60D7101A
+P 9850 6250
+AR Path="/60D7101A" Ref="R?"  Part="1" 
+AR Path="/60392D62/60D7101A" Ref="R210"  Part="1" 
+F 0 "R210" V 10025 5950 60  0000 L BNN
+F 1 "NC" V 10150 6075 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:rlc_201_smd_small" H 10187 6153 60  0001 C CNN
+F 3 "" H 10187 6153 60  0000 C CNN
+F 4 "0 Ohms Jumper 0.05W, 1/20W Chip Resistor 0201 (0603 Metric)  Thick Film" H 9850 6250 50  0001 C CNN "Description"
+F 5 "Vishay Dale" H 9850 6250 50  0001 C CNN "Manufacturer"
+F 6 "CRCW02010000Z0ED" H 9850 6250 50  0001 C CNN "Part Number"
+F 7 "0.006" H 9850 6250 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/vishay-dale/CRCW02010000Z0ED/1178434?s=N4IgTCBcDaIMICU4HUAMZUEZU9QLVQFEAREAXQF8g" H 9850 6250 50  0001 C CNN "Supplier Link"
+	1    9850 6250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11900 5950 11900 5925
+Wire Wire Line
+	11575 5950 11900 5950
+Connection ~ 12300 5550
+Wire Wire Line
+	12300 5625 12300 5550
+Wire Wire Line
+	11900 5550 12300 5550
+Connection ~ 11900 5550
+Wire Wire Line
+	11900 5625 11900 5550
+Connection ~ 11575 5550
+Wire Wire Line
+	11575 5550 11900 5550
+$Comp
+L LoRa_PCIe_GW-rescue:Cap- C214
+U 1 1 60D474E0
+P 11900 5925
+F 0 "C214" V 12100 5900 60  0000 R TNN
+F 1 "NC" V 11925 5900 60  0000 R TNN
+F 2 "LoRa_PCIe_GW:ccer_201_smd_small" H 11960 5835 60  0001 C CNN
+F 3 "" H 11960 5835 60  0001 C CNN
+F 4 "22PF ±1% 50V Ceramic Capacitor C0G, NP0 0201 (0603 Metric)" H 11900 5925 50  0001 C CNN "Description"
+F 5 "Murata" H 11900 5925 50  0001 C CNN "Manufacturer"
+F 6 "GRM0335C1H220FA01D" H 11900 5925 50  0001 C CNN "Part Number"
+F 7 "0.01" H 11900 5925 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GRM0335C1H220FA01D/11618542" H 11900 5925 50  0001 C CNN "Supplier Link"
+	1    11900 5925
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:GND #PWR0282
+U 1 1 60D4337A
+P 11575 6375
+F 0 "#PWR0282" H 11575 6500 50  0001 C CNN
+F 1 "GND" H 11575 6225 50  0000 C CNN
+F 2 "" H 11375 6375 50  0001 C CNN
+F 3 "" H 11375 6375 50  0001 C CNN
+	1    11575 6375
+	1    0    0    -1  
+$EndComp
+Connection ~ 11575 5950
+Wire Wire Line
+	11575 5950 11575 5975
+Wire Wire Line
+	11225 5750 10950 5750
+Wire Wire Line
+	11225 5950 11225 5750
+Wire Wire Line
+	11575 5950 11225 5950
+$Comp
+L LoRa_PCIe_GW-rescue:Resistor- R212
+U 1 1 60D38BB2
+P 11575 6375
+F 0 "R212" V 11775 6325 60  0000 R TNN
+F 1 "NC" V 11675 6325 60  0000 R TNN
+F 2 "LoRa_PCIe_GW:rlc_201_smd_small" H 11675 6325 60  0001 C CNN
+F 3 "" H 11675 6325 60  0000 C CNN
+F 4 "187K OHM 1% 1/20W 0201" H 11575 6375 50  0001 C CNN "Description"
+F 5 "Vishay Dale" H 11575 6375 50  0001 C CNN "Manufacturer"
+F 6 "CRCW0201187KFNED" H 11575 6375 50  0001 C CNN "Part Number"
+F 7 "0.011" H 11575 6375 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/vishay-dale/CRCW0201187KFNED/1200045" H 11575 6375 50  0001 C CNN "Supplier Link"
+	1    11575 6375
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:Resistor- R211
+U 1 1 60D358E6
+P 11575 5950
+F 0 "R211" V 11775 5900 60  0000 R TNN
+F 1 "NC" V 11600 5900 60  0000 R TNN
+F 2 "LoRa_PCIe_GW:rlc_201_smd_small" H 11675 5900 60  0001 C CNN
+F 3 "" H 11675 5900 60  0001 C CNN
+F 4 "806K ±1% 0.05W, 1/20W Chip Resistor 0201 (0603 Metric) - Thick Film" H 11575 5950 50  0001 C CNN "Description"
+F 5 "Vishay Dale" H 11575 5950 50  0001 C CNN "Manufacturer"
+F 6 "CRCW0201806KFNED" H 11575 5950 50  0001 C CNN "Part Number"
+F 7 "0.011" H 11575 5950 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/vishay-dale/CRCW0201806KFNED/1200116" H 11575 5950 50  0001 C CNN "Supplier Link"
+	1    11575 5950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10975 5550 10950 5550
+$Comp
+L LoRa_PCIe_GW-rescue:GND #PWR0283
+U 1 1 60D02C61
+P 12300 5925
+F 0 "#PWR0283" H 12300 6050 50  0001 C CNN
+F 1 "GND" H 12300 5775 50  0000 C CNN
+F 2 "" H 12100 5925 50  0001 C CNN
+F 3 "" H 12100 5925 50  0001 C CNN
+	1    12300 5925
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:Inductor- L201
+U 1 1 60D02C5B
+P 10975 5550
+F 0 "L201" H 11175 5610 60  0000 L BNN
+F 1 "NC" H 11165 5450 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:LQM2HPN2R2MJ0L" H 11165 5450 60  0001 C CNN
+F 3 "" H 11165 5450 60  0000 C CNN
+F 4 "2.2µH Shielded Multilayer Inductor 1A 150mOhm Max 1008 (2520 Metric) " H 10975 5550 50  0001 C CNN "Description"
+F 5 "Murata" H 10975 5550 50  0001 C CNN "Manufacturer"
+F 6 "LQM2HPN2R2MJ0L" H 10975 5550 50  0001 C CNN "Part Number"
+F 7 "0.14" H 10975 5550 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/murata-electronics/LQM2HPN2R2MJ0L/2594611" H 10975 5550 50  0001 C CNN "Supplier Link"
+	1    10975 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:Cap- C211
+U 1 1 60D02C50
+P 12300 5625
+F 0 "C211" V 12460 5725 60  0000 L BNN
+F 1 "NC" V 12550 5725 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:ccer_603_smd_small" H 12550 5725 60  0001 C CNN
+F 3 "" H 12550 5725 60  0000 C CNN
+F 4 "10µF ±10% 16V Ceramic Capacitor X5R 0603 (1608 Metric)" H 12300 5625 50  0001 C CNN "Description"
+F 5 "Murata" H 12300 5625 50  0001 C CNN "Manufacturer"
+F 6 "GRM188R61C106KAAL" H 12300 5625 50  0001 C CNN "Part Number"
+F 7 "0.1" H 12300 5625 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GRM188R61C106KAALJ/4905339" H 12300 5625 50  0001 C CNN "Supplier Link"
+	1    12300 5625
+	0    1    1    0   
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:Ferrite_beads- FB206
+U 1 1 60D02C45
+P 12300 5550
+F 0 "FB206" H 12470 5630 60  0000 L BNN
+F 1 "NC" H 12400 5430 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:rlc_402_smd_small" H 12400 5430 60  0001 C CNN
+F 3 "" H 12400 5430 60  0000 C CNN
+F 4 "10 Ohms @ 100MHz 1 Power Line Ferrite Bead 0402 (1005 Metric) 1A 25mOhm" H 12300 5550 50  0001 C CNN "Description"
+F 5 "Murata" H 12300 5550 50  0001 C CNN "Manufacturer"
+F 6 "BLM15PG100SN1D" H 12300 5550 50  0001 C CNN "Part Number"
+F 7 "0.027" H 12300 5550 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/murata-electronics/BLM15PG100SN1D/2587980" H 12300 5550 50  0001 C CNN "Supplier Link"
+	1    12300 5550
+	1    0    0    -1  
+$EndComp
+Connection ~ 10550 6250
+Wire Wire Line
+	10350 6250 10550 6250
+$Comp
+L LoRa_PCIe_GW-rescue:GND #PWR0284
+U 1 1 60CF889D
+P 10550 6250
+F 0 "#PWR0284" H 10550 6375 50  0001 C CNN
+F 1 "GND" H 10550 6100 50  0000 C CNN
+F 2 "" H 10350 6250 50  0001 C CNN
+F 3 "" H 10350 6250 50  0001 C CNN
+	1    10550 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:TI-TPS62242DRV6-1600X1000TP- U207
+U 1 1 60CF118E
+P 10150 5450
+F 0 "U207" H 10450 5639 60  0000 C CNN
+F 1 "NC" H 10450 5533 60  0000 C CNN
+F 2 "LoRa_PCIe_GW:DRV0006A_V" H 10150 5450 60  0001 C CNN
+F 3 "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftps62263" H 10150 5450 60  0001 C CNN
+F 4 "Buck Switching Regulator IC Positive Adjustable 0.6V 1 Output 600mA 6-WDFN" H 10150 5450 50  0001 C CNN "Description"
+F 5 "Texas Instruments" H 10150 5450 50  0001 C CNN "Manufacturer"
+F 6 "TPS62260DRVR" H 10150 5450 50  0001 C CNN "Part Number"
+F 7 "0.74" H 10150 5450 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/texas-instruments/TPS62260DRVR/1908045" H 10150 5450 50  0001 C CNN "Supplier Link"
+	1    10150 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12725 1950 12975 1950
+Connection ~ 12725 1950
+Wire Wire Line
+	12725 1050 12725 1950
+Wire Wire Line
+	12650 1050 12725 1050
+Wire Wire Line
+	12625 1950 12725 1950
+$Comp
+L LoRa_PCIe_GW-rescue:VCC3V3_IN #PWR0285
+U 1 1 60CBC099
+P 11600 1050
+F 0 "#PWR0285" H 11600 850 50  0001 C CNN
+F 1 "VCC3V3_IN" H 11615 1223 50  0000 C CNN
+F 2 "" H 11250 1090 50  0001 C CNN
+F 3 "" H 11250 1090 50  0001 C CNN
+	1    11600 1050
+	1    0    0    -1  
+$EndComp
+Connection ~ 11750 1050
+Wire Wire Line
+	11750 1050 11600 1050
+Connection ~ 11725 1950
+Wire Wire Line
+	11150 1950 11725 1950
+$Comp
+L LoRa_PCIe_GW-rescue:Ferrite_beads- FB205
+U 1 1 60392029
+P 12000 1950
+F 0 "FB205" H 12180 2030 60  0000 L BNN
+F 1 "Ferrite beads" H 12070 1840 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:rlc_402_smd_small" H 12070 1840 60  0001 C CNN
+F 3 "" H 12070 1840 60  0000 C CNN
+F 4 "10 Ohms @ 100MHz 1 Power Line Ferrite Bead 0402 (1005 Metric) 1A 25mOhm" H 12000 1950 50  0001 C CNN "Description"
+F 5 "Murata" H 12000 1950 50  0001 C CNN "Manufacturer"
+F 6 "BLM15PG100SN1D" H 12000 1950 50  0001 C CNN "Part Number"
+F 7 "0.027" H 12000 1950 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/murata-electronics/BLM15PG100SN1D/2587980" H 12000 1950 50  0001 C CNN "Supplier Link"
+	1    12000 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:Cap- C208
+U 1 1 60392028
+P 12975 2250
+F 0 "C208" V 13115 2150 60  0000 R TNN
+F 1 "100nF" V 13035 2160 60  0000 R TNN
+F 2 "LoRa_PCIe_GW:ccer_402_smd_small" H 13035 2160 60  0001 C CNN
+F 3 "" H 13035 2160 60  0000 C CNN
+F 4 "Multilayer ceramic capacitors X7R ±10%, 16V" H 12975 2250 50  0001 C CNN "Description"
+F 5 "Murata" H 12975 2250 50  0001 C CNN "Manufacturer"
+F 6 "GMD155R71C104KA11" H 12975 2250 50  0001 C CNN "Part Number"
+F 7 "0.01" H 12975 2250 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GMD155R71C104KA11D/10696609" H 12975 2250 50  0001 C CNN "Supplier Link"
+	1    12975 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:Cap- C213
+U 1 1 60392004
+P 11725 1950
+F 0 "C213" V 11895 2050 60  0000 L BNN
+F 1 "4.7uF" V 11975 2050 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:ccer_402_smd_small" H 11975 2050 60  0001 C CNN
+F 3 "" H 11975 2050 60  0000 C CNN
+F 4 "4.7µF ±20% 6.3V Ceramic Capacitor X5R 0402 (1005 Metric)" H 11725 1950 50  0001 C CNN "Description"
+F 5 "Murata" H 11725 1950 50  0001 C CNN "Manufacturer"
+F 6 "GRM155R60J475ME47D" H 11725 1950 50  0001 C CNN "Part Number"
+F 7 "0.089" H 11725 1950 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R60J475ME47D/3694656" H 11725 1950 50  0001 C CNN "Supplier Link"
+	1    11725 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:GND #PWR0185
+U 1 1 60ACEF6F
+P 11725 2250
+F 0 "#PWR0185" H 11725 2375 50  0001 C CNN
+F 1 "GND" H 11725 2100 50  0000 C CNN
+F 2 "" H 11525 2250 50  0001 C CNN
+F 3 "" H 11525 2250 50  0001 C CNN
+	1    11725 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:GND #PWR0186
+U 1 1 60AD11CC
+P 12975 2250
+F 0 "#PWR0186" H 12975 2375 50  0001 C CNN
+F 1 "GND" H 12975 2100 50  0000 C CNN
+F 2 "" H 12775 2250 50  0001 C CNN
+F 3 "" H 12775 2250 50  0001 C CNN
+	1    12975 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:VDD_RADIO #PWR0187
+U 1 1 60AD7D23
+P 12975 1950
+F 0 "#PWR0187" H 12965 1700 50  0001 C CNN
+F 1 "VDD_RADIO" H 12985 2123 50  0000 C CNN
+F 2 "" H 12975 1950 50  0001 C CNN
+F 3 "" H 12975 1950 50  0001 C CNN
+	1    12975 1950
+	1    0    0    -1  
+$EndComp
+Connection ~ 12975 1950
+Wire Wire Line
+	11725 1950 12000 1950
+Wire Wire Line
+	11750 1050 12025 1050
+$Comp
+L LoRa_PCIe_GW-rescue:GND #PWR0286
+U 1 1 60CA3379
+P 11750 1350
+F 0 "#PWR0286" H 11750 1475 50  0001 C CNN
+F 1 "GND" H 11750 1200 50  0000 C CNN
+F 2 "" H 11550 1350 50  0001 C CNN
+F 3 "" H 11550 1350 50  0001 C CNN
+	1    11750 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:Cap- C215
+U 1 1 60CA3373
+P 11750 1050
+F 0 "C215" V 11920 1150 60  0000 L BNN
+F 1 "NC" V 12000 1150 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:ccer_402_smd_small" H 12000 1150 60  0001 C CNN
+F 3 "" H 12000 1150 60  0000 C CNN
+F 4 "4.7µF ±20% 6.3V Ceramic Capacitor X5R 0402 (1005 Metric)" H 11750 1050 50  0001 C CNN "Description"
+F 5 "Murata" H 11750 1050 50  0001 C CNN "Manufacturer"
+F 6 "GRM155R60J475ME47D" H 11750 1050 50  0001 C CNN "Part Number"
+F 7 "0.089" H 11750 1050 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R60J475ME47D/3694656" H 11750 1050 50  0001 C CNN "Supplier Link"
+	1    11750 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:Ferrite_beads- FB203
+U 1 1 60CA3368
+P 12025 1050
+F 0 "FB203" H 12205 1130 60  0000 L BNN
+F 1 "NC" H 12275 975 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:rlc_402_smd_small" H 12095 940 60  0001 C CNN
+F 3 "" H 12095 940 60  0000 C CNN
+F 4 "10 Ohms @ 100MHz 1 Power Line Ferrite Bead 0402 (1005 Metric) 1A 25mOhm" H 12025 1050 50  0001 C CNN "Description"
+F 5 "Murata" H 12025 1050 50  0001 C CNN "Manufacturer"
+F 6 "BLM15PG100SN1D" H 12025 1050 50  0001 C CNN "Part Number"
+F 7 "0.027" H 12025 1050 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/murata-electronics/BLM15PG100SN1D/2587980" H 12025 1050 50  0001 C CNN "Supplier Link"
+	1    12025 1050
+	1    0    0    -1  
+$EndComp
+Text GLabel 9025 6175 0    50   Input ~ 0
+SX1302_PS_EN
+Text GLabel 8800 5000 0    50   Input ~ 0
+SX1302_CSD
+Wire Wire Line
+	9400 2400 9350 2400
+Connection ~ 9400 2150
+Wire Wire Line
+	9400 2400 9400 2150
+Text GLabel 9350 2400 0    50   Input ~ 0
+POWER_EN
+Wire Wire Line
+	12925 4225 13125 4225
+$Comp
+L LoRa_PCIe_GW-rescue:VCC_FEM #PWR0193
+U 1 1 60B19EB0
+P 13450 4225
+F 0 "#PWR0193" H 13440 3975 50  0001 C CNN
+F 1 "VCC_FEM" H 13460 4398 50  0000 C CNN
+F 2 "" H 13210 4255 50  0001 C CNN
+F 3 "" H 13210 4255 50  0001 C CNN
+	1    13450 4225
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:VCC_FEM1 #PWR0192
+U 1 1 60B15912
+P 12000 4225
+F 0 "#PWR0192" H 12000 4035 50  0001 C CNN
+F 1 "VCC_FEM1" H 12010 4398 50  0000 C CNN
+F 2 "" H 11730 4265 50  0001 C CNN
+F 3 "" H 11730 4265 50  0001 C CNN
+	1    12000 4225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11375 4225 11625 4225
+Connection ~ 11375 4225
+Wire Wire Line
+	11375 4425 11375 4225
+Wire Wire Line
+	11175 4425 11375 4425
+Wire Wire Line
+	12000 4225 12300 4225
+Connection ~ 12000 4225
+Wire Wire Line
+	11175 4225 11375 4225
+Connection ~ 10475 4825
+Wire Wire Line
+	10675 4825 10475 4825
+$Comp
+L LoRa_PCIe_GW-rescue:VCC_MAIN #PWR0191
+U 1 1 60B01DBD
+P 8625 4225
+F 0 "#PWR0191" H 8625 4000 50  0001 C CNN
+F 1 "VCC_MAIN" H 8625 4375 50  0000 C CNN
+F 2 "" H 8375 4225 50  0001 C CNN
+F 3 "" H 8375 4225 50  0001 C CNN
+	1    8625 4225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 4225 8625 4225
+Connection ~ 9050 4225
+Wire Wire Line
+	9975 4225 9050 4225
+$Comp
+L LoRa_PCIe_GW-rescue:GND #PWR0190
+U 1 1 60AF35FB
+P 12000 4525
+F 0 "#PWR0190" H 12000 4650 50  0001 C CNN
+F 1 "GND" H 12000 4375 50  0000 C CNN
+F 2 "" H 11800 4525 50  0001 C CNN
+F 3 "" H 11800 4525 50  0001 C CNN
+	1    12000 4525
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:GND #PWR0189
+U 1 1 60AEF864
+P 10475 4825
+F 0 "#PWR0189" H 10475 4950 50  0001 C CNN
+F 1 "GND" H 10475 4675 50  0000 C CNN
+F 2 "" H 10275 4825 50  0001 C CNN
+F 3 "" H 10275 4825 50  0001 C CNN
+	1    10475 4825
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:GND #PWR0188
+U 1 1 60AEBBD9
+P 9050 4525
+F 0 "#PWR0188" H 9050 4650 50  0001 C CNN
+F 1 "GND" H 9050 4375 50  0000 C CNN
+F 2 "" H 8850 4525 50  0001 C CNN
+F 3 "" H 8850 4525 50  0001 C CNN
+	1    9050 4525
+	1    0    0    -1  
+$EndComp
+Connection ~ 10450 2550
+Wire Wire Line
+	10650 2550 10450 2550
+$Comp
+L LoRa_PCIe_GW-rescue:GND #PWR0184
+U 1 1 60ACA947
+P 10450 2550
+F 0 "#PWR0184" H 10450 2675 50  0001 C CNN
+F 1 "GND" H 10450 2400 50  0000 C CNN
+F 2 "" H 10250 2550 50  0001 C CNN
+F 3 "" H 10250 2550 50  0001 C CNN
+	1    10450 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:GND #PWR0183
+U 1 1 60AC5D94
+P 8625 2250
+F 0 "#PWR0183" H 8625 2375 50  0001 C CNN
+F 1 "GND" H 8625 2100 50  0000 C CNN
+F 2 "" H 8425 2250 50  0001 C CNN
+F 3 "" H 8425 2250 50  0001 C CNN
+	1    8625 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 2150 9950 2150
+Wire Wire Line
+	9000 1950 8625 1950
+Connection ~ 9000 1950
+Wire Wire Line
+	9000 2150 9000 1950
+Wire Wire Line
+	8625 1950 8250 1950
+Connection ~ 8625 1950
+Wire Wire Line
+	8250 1950 8250 1925
+Wire Wire Line
+	9950 1950 9000 1950
+$Comp
+L LoRa_PCIe_GW-rescue:VCC_MAIN #PWR0182
+U 1 1 60AA834D
+P 8250 1925
+F 0 "#PWR0182" H 8250 1700 50  0001 C CNN
+F 1 "VCC_MAIN" H 8250 2075 50  0000 C CNN
+F 2 "" H 8000 1925 50  0001 C CNN
+F 3 "" H 8000 1925 50  0001 C CNN
+	1    8250 1925
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:Resistor- R201
+U 1 1 60392003
+P 9000 2150
+F 0 "R201" H 9100 2200 60  0000 L BNN
+F 1 "47k" H 9130 2010 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:rlc_201_smd_small" H 9130 2010 60  0001 C CNN
+F 3 "" H 9130 2010 60  0000 C CNN
+F 4 "47 kOhms ±5% 0.05W, 1/20W Chip Resistor 0201  Thick Film" H 9000 2150 50  0001 C CNN "Description"
+F 5 "Vishay Dale" H 9000 2150 50  0001 C CNN "Manufacturer"
+F 6 "CRCW020147K0" H 9000 2150 50  0001 C CNN "Part Number"
+F 7 "0.039" H 9000 2150 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/vishay-dale/CRCW020147K0FKED/1968131" H 9000 2150 50  0001 C CNN "Supplier Link"
+	1    9000 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:Cap- C212
+U 1 1 60392005
+P 8625 1950
+F 0 "C212" V 8785 2050 60  0000 L BNN
+F 1 "10uF" V 8875 2050 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:ccer_603_smd_small" H 8875 2050 60  0001 C CNN
+F 3 "" H 8875 2050 60  0000 C CNN
+F 4 "10µF ±10% 16V Ceramic Capacitor X5R 0603 (1608 Metric)" H 8625 1950 50  0001 C CNN "Description"
+F 5 "Murata" H 8625 1950 50  0001 C CNN "Manufacturer"
+F 6 "GRM188R61C106KAAL" H 8625 1950 50  0001 C CNN "Part Number"
+F 7 "0.1" H 8625 1950 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GRM188R61C106KAALJ/4905339" H 8625 1950 50  0001 C CNN "Supplier Link"
+	1    8625 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:Cap- C206
+U 1 1 60392009
+P 12000 4225
+F 0 "C206" V 12190 4315 60  0000 L BNN
+F 1 "4.7uF" V 12290 4315 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:ccer_603_smd_small" H 12290 4315 60  0001 C CNN
+F 3 "" H 12290 4315 60  0000 C CNN
+F 4 "4.7µF ±10% 16V Ceramic Capacitor X5R 0603 (1608 Metric)" H 12000 4225 50  0001 C CNN "Description"
+F 5 "Murata" H 12000 4225 50  0001 C CNN "Manufacturer"
+F 6 "GRM188R61C475KAAJD" H 12000 4225 50  0001 C CNN "Part Number"
+F 7 "0.089" H 12000 4225 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GRM188R61C475KAAJD/5027566" H 12000 4225 50  0001 C CNN "Supplier Link"
+	1    12000 4225
+	0    1    1    0   
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:NCP176- U205
+U 1 1 6039200F
+P 10175 4625
+F 0 "U205" H 10175 5250 60  0000 L BNN
+F 1 "NCP176BMX330TCG" H 10475 5250 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:XDFN6_1.2X1.2mm" H 10495 5215 60  0001 C CNN
+F 3 "" H 10495 5215 60  0000 C CNN
+F 4 "Linear Voltage Regulator IC Positive Fixed 1 Output  500mA 6-XDFN (1.2x1.2)" H 10175 4625 50  0001 C CNN "Description"
+F 5 "ON Semiconductor" H 10175 4625 50  0001 C CNN "Manufacturer"
+F 6 "NCP176AMX330TCG" H 10175 4625 50  0001 C CNN "Part Number"
+F 7 "0.135" H 10175 4625 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/on-semiconductor/NCP176AMX330TCG/5761739" H 10175 4625 50  0001 C CNN "Supplier Link"
+	1    10175 4625
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:NCP114- U203
+U 1 1 60392010
+P 10150 2350
+F 0 "U203" H 10150 2975 60  0000 L BNN
+F 1 "3V3" H 10625 2975 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:UDFN4_1x1mm" H 10630 2950 60  0001 C CNN
+F 3 "" H 10630 2950 60  0000 C CNN
+F 4 "Linear Voltage Regulator IC Positive Fixed 1 Output  300mA 4-UDFN (1.0x1.0)" H 10150 2350 50  0001 C CNN "Description"
+F 5 "ON Semiconductor" H 10150 2350 50  0001 C CNN "Manufacturer"
+F 6 "NCP114AMX330TBG" H 10150 2350 50  0001 C CNN "Part Number"
+F 7 "0.078" H 10150 2350 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/on-semiconductor/NCP114AMX330TBG/6166731" H 10150 2350 50  0001 C CNN "Supplier Link"
+	1    10150 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:Ferrite_beads- FB211
+U 1 1 6039201B
+P 12300 4225
+F 0 "FB211" H 12485 4309 60  0000 L BNN
+F 1 "Ferrite beads" H 12395 4109 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:rlc_402_smd_small" H 12395 4109 60  0001 C CNN
+F 3 "" H 12395 4109 60  0000 C CNN
+F 4 "10 Ohms @ 100MHz 1 Power Line Ferrite Bead 0402 (1005 Metric) 1A 25mOhm" H 12300 4225 50  0001 C CNN "Description"
+F 5 "Murata" H 12300 4225 50  0001 C CNN "Manufacturer"
+F 6 "BLM15PG100SN1D" H 12300 4225 50  0001 C CNN "Part Number"
+F 7 "0.027" H 12300 4225 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/murata-electronics/BLM15PG100SN1D/2587980" H 12300 4225 50  0001 C CNN "Supplier Link"
+	1    12300 4225
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:Cap- C207
+U 1 1 6039202A
+P 9050 4225
+F 0 "C207" V 9240 4315 60  0000 L BNN
+F 1 "10uF" V 9340 4315 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:ccer_603_smd_small" H 9340 4315 60  0001 C CNN
+F 3 "" H 9340 4315 60  0000 C CNN
+F 4 "10µF ±10% 16V Ceramic Capacitor X5R 0603 (1608 Metric)" H 9050 4225 50  0001 C CNN "Description"
+F 5 "Murata" H 9050 4225 50  0001 C CNN "Manufacturer"
+F 6 "GRM188R61C106KAAL" H 9050 4225 50  0001 C CNN "Part Number"
+F 7 "0.1" H 9050 4225 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GRM188R61C106KAALJ/4905339" H 9050 4225 50  0001 C CNN "Supplier Link"
+	1    9050 4225
+	0    1    1    0   
+$EndComp
+Text Notes 13100 1575 0    96   ~ 19
+VDD_RF SX1250 & SX1261 : 3.3V
+Text Label 9400 2150 0    60   ~ 0
+POWER_EN
+Text Notes 13675 4225 0    96   ~ 19
+VCC_FEM : 3.3V
+$Comp
+L LoRa_PCIe_GW-rescue:Resistor- R?
+U 1 1 60DFE9CC
+P 8975 5125
+AR Path="/60DFE9CC" Ref="R?"  Part="1" 
+AR Path="/60392D62/60DFE9CC" Ref="R204"  Part="1" 
+F 0 "R204" H 9050 5000 60  0000 L BNN
+F 1 "NC" H 9325 5025 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:rlc_201_smd_small" H 9312 5028 60  0001 C CNN
+F 3 "" H 9312 5028 60  0000 C CNN
+F 4 "0 Ohms Jumper 0.05W, 1/20W Chip Resistor 0201 (0603 Metric)  Thick Film" H 8975 5125 50  0001 C CNN "Description"
+F 5 "Vishay Dale" H 8975 5125 50  0001 C CNN "Manufacturer"
+F 6 "CRCW02010000Z0ED" H 8975 5125 50  0001 C CNN "Part Number"
+F 7 "0.006" H 8975 5125 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/vishay-dale/CRCW02010000Z0ED/1178434?s=N4IgTCBcDaIMICU4HUAMZUEZU9QLVQFEAREAXQF8g" H 8975 5125 50  0001 C CNN "Supplier Link"
+	1    8975 5125
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:Resistor- R215
 U 1 1 608259B2
-P 8850 1275
-F 0 "R202" H 9150 1200 60  0000 R TNN
-F 1 "NC" H 9100 1350 50  0000 C CNN
-F 2 "LoRa_PCIe_GW:rlc_402_smd_small" H 8850 1275 50  0001 C CNN
-F 3 "" H 8850 1275 50  0001 C CNN
-F 4 "CRCW04020000ZSTD" H 8850 1275 50  0001 C CNN "Description"
-F 5 "Vishay Dale" H 8850 1275 50  0001 C CNN "Manufacturer"
-F 6 "CRCW04020000ZSTD" H 8850 1275 50  0001 C CNN "Part Number"
-F 7 "0.014" H 8850 1275 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/vishay-dale/CRCW04020000ZSTD/1226552" H 8850 1275 50  0001 C CNN "Supplier Link"
-F 9 "Other" H 8825 1225 50  0000 C CNN "Label"
-	1    8850 1275
+P 2675 1300
+F 0 "R215" H 2975 1225 60  0000 R TNN
+F 1 "NC" H 2925 1375 50  0000 C CNN
+F 2 "LoRa_PCIe_GW:rlc_402_smd_small" H 2675 1300 50  0001 C CNN
+F 3 "" H 2675 1300 50  0001 C CNN
+F 4 "CRCW04020000ZSTD" H 2675 1300 50  0001 C CNN "Description"
+F 5 "Vishay Dale" H 2675 1300 50  0001 C CNN "Manufacturer"
+F 6 "CRCW04020000ZSTD" H 2675 1300 50  0001 C CNN "Part Number"
+F 7 "0.014" H 2675 1300 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/vishay-dale/CRCW04020000ZSTD/1226552" H 2675 1300 50  0001 C CNN "Supplier Link"
+F 9 "" H 2650 1250 50  0001 C CNN "Label"
+	1    2675 1300
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	3275 3050 3275 1750
+Connection ~ 3275 1750
+Wire Wire Line
+	2975 1750 3275 1750
+Wire Wire Line
+	2675 1300 3275 1300
+Wire Wire Line
+	1800 3250 1800 1950
+Wire Wire Line
+	1800 1950 1975 1950
+$Comp
+L LoRa_PCIe_GW-rescue:Cap- C209
+U 1 1 612B8B27
+P 1000 1750
+F 0 "C209" V 1100 1475 60  0000 L BNN
+F 1 "NC" V 1200 1475 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:ccer_402_smd_small" H 1260 1850 60  0001 C CNN
+F 3 "" H 1260 1850 60  0000 C CNN
+F 4 "1µF ±20% 10V Ceramic Capacitor X5R 0402 (1005 Metric)" H 1000 1750 50  0001 C CNN "Description"
+F 5 "Murata" H 1000 1750 50  0001 C CNN "Manufacturer"
+F 6 "GRM153R61A105ME95D" H 1000 1750 50  0001 C CNN "Part Number"
+F 7 "0.038" H 1000 1750 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GRM153R61A105ME95D/4904820" H 1000 1750 50  0001 C CNN "Supplier Link"
+	1    1000 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L LoRa_PCIe_GW-rescue:GND #PWR0287
+U 1 1 612BD689
+P 1000 2050
+F 0 "#PWR0287" H 1000 2175 50  0001 C CNN
+F 1 "GND" H 1000 1900 50  0000 C CNN
+F 2 "" H 800 2050 50  0001 C CNN
+F 3 "" H 800 2050 50  0001 C CNN
+	1    1000 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11075 3675 10900 3675
+Wire Wire Line
+	10900 3675 10900 3650
+Wire Wire Line
+	11475 3675 11625 3675
+Wire Wire Line
+	11625 3675 11625 4225
+Connection ~ 11625 4225
+Wire Wire Line
+	11625 4225 12000 4225
+$Comp
+L LoRa_PCIe_GW-rescue:Resistor- R222
+U 1 1 6099317F
+P 11475 3675
+F 0 "R222" H 11775 3600 60  0000 R TNN
+F 1 "NC" H 11725 3750 50  0000 C CNN
+F 2 "LoRa_PCIe_GW:rlc_402_smd_small" H 11475 3675 50  0001 C CNN
+F 3 "" H 11475 3675 50  0001 C CNN
+F 4 "CRCW04020000ZSTD" H 11475 3675 50  0001 C CNN "Description"
+F 5 "Vishay Dale" H 11475 3675 50  0001 C CNN "Manufacturer"
+F 6 "CRCW04020000ZSTD" H 11475 3675 50  0001 C CNN "Part Number"
+F 7 "0.014" H 11475 3675 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/vishay-dale/CRCW04020000ZSTD/1226552" H 11475 3675 50  0001 C CNN "Supplier Link"
+F 9 "" H 11450 3625 50  0001 C CNN "Label"
+	1    11475 3675
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9525 5850 9650 5850
+$Comp
+L LoRa_PCIe_GW-rescue:Resistor- R?
+U 1 1 60D6C37B
+P 9125 5850
+AR Path="/60D6C37B" Ref="R?"  Part="1" 
+AR Path="/60392D62/60D6C37B" Ref="R209"  Part="1" 
+F 0 "R209" H 9200 5725 60  0000 L BNN
+F 1 "NC" H 9462 5753 60  0000 L BNN
+F 2 "LoRa_PCIe_GW:rlc_201_smd_small" H 9462 5753 60  0001 C CNN
+F 3 "" H 9462 5753 60  0000 C CNN
+F 4 "0 Ohms Jumper 0.05W, 1/20W Chip Resistor 0201 (0603 Metric)  Thick Film" H 9125 5850 50  0001 C CNN "Description"
+F 5 "Vishay Dale" H 9125 5850 50  0001 C CNN "Manufacturer"
+F 6 "CRCW02010000Z0ED" H 9125 5850 50  0001 C CNN "Part Number"
+F 7 "0.006" H 9125 5850 50  0001 C CNN "Price[1k]"
+F 8 "https://www.digikey.com/en/products/detail/vishay-dale/CRCW02010000Z0ED/1178434?s=N4IgTCBcDaIMICU4HUAMZUEZU9QLVQFEAREAXQF8g" H 9125 5850 50  0001 C CNN "Supplier Link"
+	1    9125 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2025 4900 2850 4900
 $EndSCHEMATC
