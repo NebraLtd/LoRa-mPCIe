@@ -21,6 +21,6 @@ In the future, we will have our 470 MHz and 433 MHz designs available as well. A
 
 ## Open Source Hardware Certification
 
-![Open Source Hardware Certification UK000026](https://raw.githubusercontent.com/NebraLtd/LoRa-mPCIe/main/media/OSHWA/OSHW_mark_UK000026.png)
+<img src="https://raw.githubusercontent.com/NebraLtd/LoRa-mPCIe/main/media/OSHWA/OSHW_mark_UK000026.png" width=50% height=50%>
 
 We are proud to announce that the Nebra LoRa mPCIe Concentrator project is certified as Open Source Hardware by the Open Source Hardware Association ([OSHWA](https://www.oshwa.org/)). The registration number for this project is [UK000026](https://certification.oshwa.org/uk000026.html).
