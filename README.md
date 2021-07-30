@@ -11,7 +11,7 @@ This contains the initial design of the SX1302/3 concentrator but it is based on
 
 ### v1.1
 
-This is the latest version of the SX1302/3 based LoRa concentrator design, based on the v3 Semtech Corecell reference design.
+The [v1.1 branch of this repo](https://github.com/NebraLtd/LoRa-mPCIe/tree/v1.1) is the latest version of the SX1302/3 based LoRa concentrator design, based on the v3 Semtech Corecell reference design.
 
 There are multiple variants (USB/SPI versions, GNSS/no-GNSS versions and different frequency options). Visit the [v1.1 README](https://github.com/NebraLtd/LoRa-mPCIe/blob/v1.1/README.md) for more information on the different hardware versions and how to produce them.
 
