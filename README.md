@@ -7,7 +7,7 @@ This repo contains a number of branches with different versions of the LoRa mPCI
 
 ### Main
 
-This contains the initial design of the SX1302/3 concentrator but it is based on the original version of the Semtech reference design. It is therefore outdated and is here just for reference purposes. **This hardware has not been verified with prototypes. We do not recommend you use this design.**
+The [main branch of this repo](https://github.com/NebraLtd/LoRa-mPCIe) contains the initial design of the SX1302/3 concentrator but it is based on the original version of the Semtech reference design. It is therefore outdated and is here just for reference purposes. **This hardware has not been verified with prototypes. We do not recommend you use this design.**
 
 ### v1.1
 
