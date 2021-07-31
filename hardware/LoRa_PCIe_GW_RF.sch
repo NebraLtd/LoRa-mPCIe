@@ -2844,11 +2844,11 @@ F 0 "C833" V 19693 6879 60  0000 L BNN
 F 1 "2.7pF" V 19775 6925 50  0000 C CNN
 F 2 "LoRa_PCIe_GW:ccer_201_smd_small" H 19500 6775 50  0001 C CNN
 F 3 "" H 19500 6775 50  0001 C CNN
-F 4 "2.7pF ±0.25pF 25V Ceramic Capacitor C0G, NP0 0201 (0603 Metric)" H 19500 6775 50  0001 C CNN "Description"
+F 4 "2.7 pF ±0.1pF 50V Ceramic Capacitor C0G, NP0 0201 (0603 Metric)" H 19500 6775 50  0001 C CNN "Description"
 F 5 "Murata" H 19500 6775 50  0001 C CNN "Manufacturer"
-F 6 "GJM0335C1E2R7CB01J" H 19500 6775 50  0001 C CNN "Part Number"
+F 6 "GJM0335C1H2R7BB01D" H 19500 6775 50  0001 C CNN "Part Number"
 F 7 "0.008" H 19500 6775 50  0001 C CNN "Price[1k]"
-F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GJM0335C1E2R7CB01J/2592574" H 19500 6775 50  0001 C CNN "Supplier Link"
+F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GJM0335C1H2R7BB01D/9758987" H 19500 6775 50  0001 C CNN "Supplier Link"
 	1    19500 6775
 	0    1    1    0   
 $EndComp
@@ -2973,4 +2973,150 @@ Connection ~ 8800 14550
 Wire Wire Line
 	8800 14550 4975 14550
 Connection ~ 4975 14025
+Wire Notes Line
+	12450 15100 16100 15100
+Wire Notes Line style solid rgb(0, 0, 0)
+	12450 12075 16100 12075
+Wire Notes Line style solid rgb(0, 0, 0)
+	12450 12250 16100 12250
+Wire Notes Line rgb(0, 0, 0)
+	12450 12425 16100 12425
+Text Notes 12475 12225 0    90   Italic 18
+Part
+Text Notes 13550 12225 0    100  Italic 20
+868M
+Text Notes 14850 12225 0    100  Italic 20
+915M
+Text Notes 12475 12400 0    90   ~ 18
+U801,U805
+Text Notes 13550 12400 0    90   ~ 18
+B4377
+Text Notes 14875 12400 0    90   ~ 18
+B4344
+Wire Notes Line
+	12450 12650 16100 12650
+Wire Notes Line
+	12450 12875 16100 12875
+Wire Notes Line
+	12450 13100 16100 13100
+Wire Notes Line
+	12450 13325 16100 13325
+Wire Notes Line
+	12450 13550 16100 13550
+Text Notes 12475 12600 0    90   ~ 18
+U803
+Text Notes 13550 12600 0    90   ~ 18
+B4377
+Text Notes 14875 12600 0    90   ~ 18
+B2625
+Text Notes 12475 12825 0    90   ~ 18
+C805
+Text Notes 13550 12825 0    90   ~ 18
+5.6pF
+Text Notes 14875 12825 0    90   ~ 18
+10pF
+Text Notes 12475 13050 0    90   ~ 18
+C711
+Text Notes 13550 13050 0    90   ~ 18
+1.8pF
+Text Notes 14875 13050 0    90   ~ 18
+2.4pF
+Text Notes 12475 13275 0    90   ~ 18
+C829
+Text Notes 13550 13275 0    90   ~ 18
+1.3pF
+Text Notes 14875 13275 0    90   ~ 18
+2.4pF
+Text Notes 12475 13500 0    90   ~ 18
+C832
+Text Notes 13550 13500 0    90   ~ 18
+3.3pF
+Text Notes 14875 13500 0    90   ~ 18
+1.8pF
+Wire Notes Line
+	12450 13775 16100 13775
+Wire Notes Line
+	12450 14000 16100 14000
+Wire Notes Line
+	12450 14225 16100 14225
+Wire Notes Line
+	12450 14450 16100 14450
+Wire Notes Line
+	12450 14675 16100 14675
+Wire Notes Line
+	12450 14900 16100 14900
+Text Notes 12475 13725 0    90   ~ 18
+C804, C831
+Text Notes 13550 13725 0    90   ~ 18
+3.3pF
+Text Notes 14875 13725 0    90   ~ 18
+NC
+Text Notes 12475 13950 0    90   ~ 18
+C833
+Text Notes 13550 13950 0    90   ~ 18
+2.7pF
+Text Notes 14875 13950 0    90   ~ 18
+NC
+Text Notes 12475 14175 0    90   ~ 18
+C807
+Text Notes 13550 14175 0    90   ~ 18
+2.2pF
+Text Notes 14875 14175 0    90   ~ 18
+2.7pF
+Text Notes 12475 14400 0    90   ~ 18
+C825
+Text Notes 13550 14400 0    90   ~ 18
+100pF
+Text Notes 14875 14400 0    90   ~ 18
+33pF
+Text Notes 12475 14625 0    90   ~ 18
+C826
+Text Notes 13550 14625 0    90   ~ 18
+100pF
+Text Notes 14875 14625 0    90   ~ 18
+120pF
+Text Notes 12475 14850 0    90   ~ 18
+C710
+Text Notes 13550 14850 0    90   ~ 18
+2.2pF
+Text Notes 14875 14850 0    90   ~ 18
+2.1pF
+Text Notes 12475 15075 0    90   ~ 18
+C830
+Text Notes 13550 15050 0    90   ~ 18
+1.5pF
+Text Notes 14875 15075 0    90   ~ 18
+2.1pF
+Wire Notes Line
+	12450 15300 16100 15300
+Wire Notes Line
+	12450 15500 16100 15500
+Wire Notes Line style solid rgb(0, 0, 0)
+	12450 15700 16100 15700
+Wire Notes Line style solid rgb(0, 0, 0)
+	12450 12075 12450 15700
+Wire Notes Line style solid rgb(0, 0, 0)
+	16100 12075 16100 15700
+Wire Notes Line
+	13525 12075 13525 15700
+Wire Notes Line
+	14850 12075 14850 15700
+Text Notes 12475 15275 0    90   ~ 18
+L814
+Text Notes 13550 15275 0    90   ~ 18
+5.6nH
+Text Notes 14875 15275 0    90   ~ 18
+4.7nH
+Text Notes 12475 15475 0    90   ~ 18
+L810
+Text Notes 13550 15475 0    90   ~ 18
+3nH
+Text Notes 14875 15475 0    90   ~ 18
+2.7nH
+Text Notes 12475 15675 0    90   ~ 18
+L813
+Text Notes 13550 15675 0    90   ~ 18
+5.6nH
+Text Notes 14875 15675 0    90   ~ 18
+3.3nH
 $EndSCHEMATC
