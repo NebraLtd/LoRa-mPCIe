@@ -5,8 +5,8 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 1 5
 Title "LoRa PCIe Gateway Main"
-Date "2021-04-13"
-Rev "1.1"
+Date "2022-01-18"
+Rev "1.2"
 Comp "Nebra Ltd"
 Comment1 "SX1302/3 Schematic Part"
 Comment2 ""

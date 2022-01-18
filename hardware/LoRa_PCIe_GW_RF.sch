@@ -5,8 +5,8 @@ $Descr A2 23386 16535
 encoding utf-8
 Sheet 5 5
 Title "LoRa PCIe Gateway Rf Part"
-Date "2021-04-13"
-Rev "1.1"
+Date "2022-01-18"
+Rev "1.2"
 Comp "Nebra Ltd"
 Comment1 "RF Front End Schematic Part"
 Comment2 ""

@@ -15,3 +15,17 @@ Rev 1.1_2021_04_13
 	- Removed Rf part R802, R803, R804 according to Corecell_V3
 	- Changed resitor values R805, R807, R809 to 1k according to Corecell_V3
 	- Silkscreen updated.
+
+Rev 1.2_2022_01_18
+	- Changed U202 1V2 DCDC from fixed to adjuctable output variant (better sourcing) with additional resistors R231,R232 and capacitor C231
+	- Changed U201,U203,U203 LDO (obsolite) to NCP114AMX330TBG
+	- Added new assembly variant for non GNSS non Temperature sensor
+	- Changed C206,C215 capacitor values from 4.7uF to 47uF
+	- Added 100nF capacitors C210 and C216.
+	- U203, C212,C213 and FB205 removed from default population, FB203 set instead for direct 3V3 VDD_RF feed.
+	- U205, C207, R207 removed from default population, R222 set instead.
+	- Improved layout and routing.	
+	- GNSS power changed to direct feed from VCC3V3_IN instead of LDO U206.U206,C225 removed from default population, R221 set to default population.
+	- Remove R601 for NON_GNSS variants
+	- Temp sensor removed from default population. U204, R205, C222, C223 removed from default population and R203,R206 for NON_GNSS variant.
+	- New assembly fabrication files for USB GNSS NON TEMP variant.

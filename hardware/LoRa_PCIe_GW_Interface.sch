@@ -5,8 +5,8 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 3 5
 Title "LoRa PCIe Gateway Interface"
-Date "2021-04-13"
-Rev "1.1"
+Date "2022-01-18"
+Rev "1.2"
 Comp "Nebra Ltd"
 Comment1 "mini-PCIe Interface Connector & MCU USB Bridge"
 Comment2 ""
