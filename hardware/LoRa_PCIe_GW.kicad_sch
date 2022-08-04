@@ -3608,6 +3608,9 @@
     (path "/00000000-0000-0000-0000-000060392d62/00000000-0000-0000-0000-000060ffab6b"
       (reference "#PWR02") (unit 1) (value "GND") (footprint "")
     )
+    (path "/00000000-0000-0000-0000-000060392d42/9f9721c4-8089-4c91-8f7c-00eb4bcefae7"
+      (reference "#PWR03") (unit 1) (value "GND") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-000060392d62/00000000-0000-0000-0000-0000615a88b4"
       (reference "#PWR04") (unit 1) (value "GND") (footprint "")
     )
@@ -4795,6 +4798,18 @@
     )
     (path "/00000000-0000-0000-0000-000060392d42/51a09f0e-54e5-4460-a039-03bf6fc2be9e"
       (reference "TP11") (unit 1) (value "TestPoint") (footprint "nebra:TestPoint_SMD_1.6mm")
+    )
+    (path "/00000000-0000-0000-0000-000060392d42/fee594a6-8a06-4fac-845a-6182a7e079e2"
+      (reference "TP12") (unit 1) (value "TestPoint") (footprint "nebra:TestPoint_SMD_1.6mm")
+    )
+    (path "/00000000-0000-0000-0000-000060392d42/53ca049c-d458-42fc-9fa8-ed11e9ad9fe9"
+      (reference "TP13") (unit 1) (value "TestPoint") (footprint "nebra:TestPoint_SMD_1.6mm")
+    )
+    (path "/00000000-0000-0000-0000-000060392d42/fc9adc01-2d31-4d7e-9bf6-8acaa23dda04"
+      (reference "TP14") (unit 1) (value "TestPoint") (footprint "nebra:TestPoint_SMD_1.6mm")
+    )
+    (path "/00000000-0000-0000-0000-000060392d42/67c69649-a57d-484a-a668-e3f97d45904c"
+      (reference "TP15") (unit 1) (value "TestPoint") (footprint "nebra:TestPoint_SMD_1.6mm")
     )
     (path "/00000000-0000-0000-0000-00006039207a"
       (reference "U100") (unit 1) (value "SX1303") (footprint "LoRa_PCIe_GW:vqfn68_7x7mm")

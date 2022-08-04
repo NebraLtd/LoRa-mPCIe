@@ -64,7 +64,7 @@
         "annular_width": "error",
         "clearance": "error",
         "copper_edge_clearance": "error",
-        "courtyards_overlap": "error",
+        "courtyards_overlap": "warning",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
@@ -124,7 +124,9 @@
         0.1,
         0.15,
         0.1956,
-        0.2
+        0.2,
+        0.2132,
+        0.3
       ],
       "via_dimensions": [
         {
@@ -410,7 +412,7 @@
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.15,
-        "name": "Microstrip 50ohm",
+        "name": "Microstrip_50ohm",
         "nets": [
           "/SCH1/ANT_RF1",
           "/SCH1/ANT_RF2",
