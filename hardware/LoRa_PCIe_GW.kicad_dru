@@ -1,0 +1,4 @@
+(version 1)
+(rule RF_Track_Width
+   (constraint track_width (max 0.2132mm))
+   (condition "A.NetClass == 'Microstrip_50ohm'"))
