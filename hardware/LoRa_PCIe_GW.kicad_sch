@@ -664,6 +664,7 @@
     )
   )
 
+
   (junction (at 302.26 165.735) (diameter 0) (color 0 0 0 0)
     (uuid 03c52831-5dc5-43c5-a442-8d23643b46fb)
   )
@@ -3764,6 +3765,9 @@
     (path "/00000000-0000-0000-0000-000060392d42/00000000-0000-0000-0000-000060c528c9"
       (reference "#PWR0147") (unit 1) (value "GND") (footprint "")
     )
+    (path "/00000000-0000-0000-0000-000060392d42/2d3e6de2-285a-4204-9e0b-0665d6d579be"
+      (reference "#PWR0148") (unit 1) (value "GND") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-000060392d42/00000000-0000-0000-0000-000060c9aebd"
       (reference "#PWR0149") (unit 1) (value "GND") (footprint "")
     )
@@ -4132,6 +4136,9 @@
     )
     (path "/00000000-0000-0000-0000-000060392d79/00000000-0000-0000-0000-0000603920e4"
       (reference "A2") (unit 1) (value "U.FL") (footprint "LoRa_PCIe_GW:U.FL-R-SMT_Hirose")
+    )
+    (path "/00000000-0000-0000-0000-000060392d42/de08cb81-6d80-4142-9c2d-5c27d678da12"
+      (reference "C1") (unit 1) (value "0.1uF") (footprint "LoRa_PCIe_GW:rlc_402_smd_small")
     )
     (path "/00000000-0000-0000-0000-000060392d42/0fef6e9c-1367-47a3-bcd3-36ec27a8248a"
       (reference "C2") (unit 1) (value "0.1uF") (footprint "LoRa_PCIe_GW:rlc_402_smd_small")
