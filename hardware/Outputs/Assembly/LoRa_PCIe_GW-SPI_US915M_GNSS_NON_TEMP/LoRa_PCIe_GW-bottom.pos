@@ -1,4 +1,4 @@
-### Module positions - created on 3/11/2021 7:26:42 PM ###
+### Module positions - created on 1/10/2022 11:20:29 AM ###
 ### Printed by Pcbnew version kicad (5.1.5)-3
 ## Unit = mm, Angle = deg.
 ## Side : bottom
@@ -11,5 +11,5 @@ FB212     Ferrite_beads  rlc_402_smd_small         -133.6000  -126.5400   90.000
 L601      47nH           rlc_402_smd_small         -144.3300  -121.3400   90.0000  bottom
 R600      10R            rlc_201_smd_small         -135.1400  -126.7200  270.0000  bottom
 R602      0R             rlc_201_smd_small         -142.4600  -126.6100   90.0000  bottom
-U600      ZOE-M8Q        LGA43R65P9X9_700X700X116  -138.5900  -122.3900  180.0000  bottom
+U600      EVA-M8M-0      LGA43R65P9X9_700X700X116  -138.5900  -122.3900  180.0000  bottom
 ## End

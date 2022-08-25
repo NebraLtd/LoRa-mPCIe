@@ -15,6 +15,13 @@ The [v1.1 branch of this repo](https://github.com/NebraLtd/LoRa-mPCIe/tree/v1.1)
 
 There are multiple variants (USB/SPI versions, GNSS/no-GNSS versions and different frequency options). Visit the [v1.1 VARIANTS file](https://github.com/NebraLtd/LoRa-mPCIe/blob/v1.1/VARIANTS.md) for more information on the different hardware versions and how to produce them.
 
+### v1.2
+The development can be followed on the v1.2 branch but keeping the branch unmerged to master would create issues as branches generally accepted as unstable. Also the design will be ended with v1.2 from various reasons (Branding issues with Semtech, semantic versioning does not work in hardware design as in software development)
+
+The variant files also can be observed in the Output's folder under their respective folders.
+
+Note: Successor of this design will appear soon in another repo.
+
 ### 470/433
 
 In the future, we will have our 470 MHz and 433 MHz designs available as well. As the design differs considerably from the 868/915 versions it may be in a separate branch.
